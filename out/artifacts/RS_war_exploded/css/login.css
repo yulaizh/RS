@@ -1,0 +1,164 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(../pic/1234.png);
+}
+
+.logo{
+    float: left;
+}
+.logo img{
+    margin: 15px 0px 0px 20px;
+    width: 110px;
+    height: 30px;
+}
+
+.picture{
+    margin: 0 auto;
+    width: 450px;
+    height: 500px;
+}
+.picture img{
+    position: relative;
+    top:20px;
+    left: 70px;
+    width: 400px;
+    height: 320px;
+}
+.bigBox{
+    box-shadow: 0 1px 3px rgba(26,26,26,.1);
+    position: absolute;
+    top: 230px;
+    left: 520px;
+    margin: 0 auto;
+    width: 400px;
+    height: 340px;
+    background-color: #FFFFFF;
+}
+
+.smallBox{
+    margin: 0 auto;
+    position: relative;
+    top: 35px;
+    width: 300px;
+    height:310px;
+}
+
+    .account_input{
+        width: 286px;
+        height: 40px;
+        outline: none;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .password{
+
+        margin-top: 15px;
+    }
+    .re_password{
+
+        margin-top: 15px;
+    }
+    .password_input{
+        width: 286px;
+        height: 40px;
+        outline: none;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .re_password_input{
+        width: 286px;
+        height: 40px;
+        outline: none;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+        #output1{
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: red;
+        }
+        #output2{
+            position: absolute;
+            top: 75px;
+            right: 15px;
+            color: red;
+        }
+        #output3{
+            position: absolute;
+            top: 130px;
+            right: 15px;
+            color: red;
+        }
+
+    .check{
+            margin-left: 30px;
+            margin-top: 30px;
+            font-size: 13px;
+        }
+            .check span{
+                margin-left: 1px;
+            }
+    .button{
+        border-width: 0px;
+        margin-top: 20px;
+        width: 300px;
+        height: 40px;
+        background-color: #8FDAFF;
+        font-size: 20px;
+        color: #FFFFFF;
+        outline: none;
+        cursor: pointer;
+    }
+    .button:active{
+        background-color: #2a90d7;
+    }
+    .three{
+        position: relative;
+        top: 15px;
+        width: 170px;
+        margin: 0 auto;
+    }
+
+        .three img{
+            width: 40px;
+            height: 40px;
+        }
+
+        .three_box{
+            display: inline-block;
+            width: 40px;
+            height: 60px;
+            margin: 0px 5px 0px 5px;
+            text-align: center;
+            font-size: 15px;
+            border:none;
+            outline: none;
+            cursor: pointer;
+        }
+
+    .point_out{
+        box-shadow: 0 1px 3px rgba(26,26,26,.1);
+        text-align: center;
+        margin: 70px auto;
+        width: 400px;
+        height: 50px;
+        font-size: 18px;
+        background-color: #F6F6F6;
+    }
+        .point_box{
+            margin-top: 10px;
+        }
+            .point_box button{
+                font-size: 18px;
+                outline: none;
+                border: none;
+                color: #2a90d7;
+                cursor: pointer;
+            }

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>conent1</title>
+    <script type="text/javascript" src="../web/js_lib/jquery-3.3.1.js"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+        }
+
+        .main span{
+            font-size: 18px;
+        }
+
+        .sex_input{
+            margin: 40px 0px 0px 50px;
+            width: 100%;
+            height: 70px;
+        }
+
+            .sex_input a{
+                text-decoration: none;
+                display: inline-block;
+                width: 75px;
+                height: 35px;
+                outline: none;
+                background-color: #8FDAFF;
+                border-width: 0px;
+                border-radius: 5px;
+                margin-left: 30px;
+                cursor: pointer;
+                text-align: center;
+                color: black;
+                line-height: 35px;
+            }
+
+            .checked{
+                background-color: #333333;
+            }
+        .birth_input{
+            margin: 10px 0px 0px 50px;
+            width: 100%;
+            height: 70px;
+        }
+
+            .birth_input select{
+                background-color: #333333;
+                margin-left: 30px;
+                width: 90px;
+                height: 35px;
+                border-width: 0px;
+                border-radius: 5px;
+                outline: none;
+            }
+        .area_input{
+            margin: 10px 0px 0px 50px;
+            width: 100%;
+            height: 70px;
+        }
+            .area_input select{
+                background-color: #333333;
+                margin-left: 30px;
+                width: 90px;
+                height: 35px;
+                border-width: 0px;
+                border-radius: 5px;
+                outline: none;
+            }
+        .text_input{
+            margin: 10px 0px 0px 50px;
+            width: 100%;
+            height: 70px;
+        }
+            .text_input input{
+                width: 300px;
+                height: 30px;
+                margin-left: 30px;
+                outline: none;
+                padding-left: 5px;
+            }
+        .button{
+            margin: 10px 0px 0px 100px;
+            width: 100%;
+            height: 70px;
+        }
+            .button a{
+                text-decoration: none;
+                display: inline-block;
+                width: 150px;
+                height: 40px;
+                outline: none;
+                background-color: #8FDAFF;
+                border-width: 0px;
+                border-radius: 5px;
+                margin-left: 35px;
+                cursor: pointer;
+                text-align: center;
+                color: black;
+                line-height: 40px;
+            }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sex_input">
+            <span>性别:</span>
+            <a href="javascript:;" class="checked">男</a>
+            <a href="javascript:;">女</a>
+            <a href="javascript:;">保密</a>
+        </div>
+        <div class="birth_input">
+            <span>生日:</span>
+            <select id="year"></select>
+            <select id="month"></select>
+            <select id="day"></select>
+        </div>
+        <div class="area_input">
+            <span>地址:</span>
+            <select id="province"></select>
+            <select id="city"></select>
+            <select id="sector"></select>
+        </div>
+        <div class="text_input">
+            <span>详细地址:</span>
+            <input type="text">
+        </div>
+        <div class="button">
+            <a href="javascript:;">修改</a>
+            <a href="javascript:;">确认</a>
+        </div>
+    </div>
+
+</body>
+<script>
+    var provinceArray = ["浙江省","北京市","上海市","广州省","天津市","河北省","河南省","黑龙江省","辽宁省","四川省","江苏省","广西省","云南省","安徽省","新疆省","海南省"];
+    var city = ["杭州市","湖州市","温州市","上海市","北京市"];
+    var sector = ["西湖区","江干区","滨江区","上城区","下城区"];
+    $(document).ready(function () {
+        for (var i=1990;i<=2018;i++) {
+            $('#year').append("<option value="+i+">"+i+"</option>");
+        }
+        for (var i=1;i<=12;i++) {
+            $('#month').append("<option value="+i+">"+i+"</option>");
+        }
+        for (var i=1;i<=31;i++) {
+            $('#day').append("<option value="+i+">"+i+"</option>");
+        }
+        for (var i=0;i < provinceArray.length;i++) {
+            $('#province').append("<option value="+provinceArray[i]+">"+provinceArray[i]+"</option>");
+        }
+        for (var i=0;i < city.length;i++) {
+            $('#city').append("<option value="+city[i]+">"+city[i]+"</option>");
+        }
+        for (var i=0;i < sector.length;i++) {
+            $('#sector').append("<option value="+sector[i]+">"+sector[i]+"</option>");
+        }
+
+    });
+
+
+</script>
+</html>

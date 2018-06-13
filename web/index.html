@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<!--
+网页总宽1165px；
+顶部高度35px（提供15px的margin）；
+
+左侧宽度（110px） margin: 0 375px 0px 135px;；
+中间宽度（655px）；
+右侧宽度（340px） margin: 0 0 0 825px;
+左中空白25px，右中空白35px；
+
+css在同一目录下
+目前主页的大体内容完成
+还没有完成的内容有: 动态加载,建议，了解吃鲸，点击左侧边栏 按钮颜色随之改变，一些顺畅效果，链接互联等细节。加载时的动效
+
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+    <script type="text/javascript" src="js_lib/jquery-3.3.1.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>-->
+</head>
+<body>
+
+<header class="head">
+    <div class="head_left">
+        <ul>
+            <li class="head_left1">
+                <a class="head_left_button1" href="#">了解吃鲸</a>
+            </li>
+            <li class="head_left2">
+                <a class="head_left_button2">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>杭州</span>&nbsp;&nbsp;<span>晴</span>&nbsp;&nbsp;&nbsp;<span>21°&nbsp;&nbsp;/&nbsp;&nbsp;30°</span><span>&nbsp;▽️</span>
+                </a>
+                <div class="hide">
+                    <ul class="hide_ul">
+                        <div class="hide_head">
+                            <div>
+                                <p><a>杭州</a>&nbsp;<span>西南风3级</span><img></p>
+                            </div>
+                        </div>
+                        <div class="hide_foot">
+                            <li class="hide_li">
+                                <p>今天</p>
+                                <img src="../pic/tianqi_1.png">
+                                <p>21°-30°</p>
+                            </li>
+                            <li class="hide_li">
+                                <p>明天</p>
+                                <img src="../pic/tianqi_2.png">
+                                <p>21°-30°</p>
+                            </li>
+                            <li class="hide_li">
+                                <p>后天</p>
+                                <img src="../pic/tianqi_1.png">
+                                <p>21°-30°</p>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <div class="head_right">
+        <ul>
+            <li class="head_list">
+                <a class="button2" href="#">反馈</a>
+            </li>
+            <li class="head_list">
+                <a class="button1" href="#">发文</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<div style="width: 1165px;margin: 0 auto">
+    <div class="left">
+        <div class="leftNav">
+            <div class="">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="../pic/logo.png" >
+                    </a>
+                </div>
+                <ul class="left_ul">
+                    <li>
+                        <a class="left_list" href="#" style="background-color: #8FDAFF ;color: #FFFFFF;"><span>首页</span></a>
+                    </li>
+                    <li>
+                        <a class="left_list" href="#"><span>热门</span></a>
+                    </li>
+                    <li>
+                        <a class="left_list" href="#"><span>体育</span></a>
+                    </li>
+                    <li>
+                        <a class="left_list" href="#"><span>教育</span></a>
+                    </li>
+                    <li>
+                        <a class="left_list" href="#"><span>财经</span></a>
+                    </li>
+                    <li>
+                        <a class="left_list" href="#"><span>社会</span></a>
+                    </li>
+                    <li>
+                        <a class="left_list" href="#"><span>娱乐</span></a>
+                    </li>
+                    <li>
+                        <a class="left_list" href="#"><span>军事</span></a>
+                    </li>
+                    <li>
+                        <a class="left_list" href="#"><span>国内</span></a>
+                    </li>
+                    <li>
+                        <a class="left_list" href="#"><span>科技</span></a>
+                    </li>
+                    <li>
+                        <a class="left_list" href="#"><span>互联网</span></a>
+                    </li>
+                    <li>
+                        <a class="left_list" href="#"><span>房产</span></a>
+                    </li>
+                    <li>
+                        <a class="left_list" href="#"><span>国际</span></a>
+                    </li>
+                    <li>
+                        <a class="left_list" href="#"><span>女人</span></a>
+                    </li>
+                    <li>
+                        <a class="left_list" href="#"><span>汽车</span></a>
+                    </li>
+                    <li>
+                        <a class="left_list" href="#"><span>游戏</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="shuffling">
+            <ul class="pics_box">
+                <li>
+                    <a class="link" href="">
+                        <img class="image_hidden" src="../pic/touxiang.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="">
+                        <img class="image" src="../pic/touxiang.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="">
+                        <img class="image_hidden" src="../pic/touxiang.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="">
+                        <img class="image_hidden" src="../pic/touxiang.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="">
+                        <img class="image_hidden" src="../pic/touxiang.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="">
+                        <img class="image_hidden" src="../pic/touxiang.jpg">
+                    </a>
+                </li>
+            </ul>
+            <ul class="buttons">
+                <li>新闻</li>
+                <li>李航</li>
+                <li>中锋</li>
+                <li>阿正</li>
+                <li>小刘</li>
+                <li>新闻</li>
+
+            </ul>
+        </div>
+        <div id="main_content">
+            <ul class="content_ul">
+                <li>AjaxLoginServlet
+                    <div class="box">
+                        <div class="pic_box">
+                            <img class="pic" src="../pic/touxiang.jpg">
+                        </div>
+                        <div class="content_box">
+                            <div class="title_box">
+                                <a class="title" href="text.html">美国中央情报局局长彭佩奥已与朝鲜领导人金正恩会面</a>
+                            </div>
+                            <div class="little_things_box">
+                                <a class="little_tag">军事·</a>
+                                <span class="little_font_of_time">一小时前</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="right">
+        <div class="vertical">
+            <div>
+                <input class="input_find" type="text">
+                <input class="button_find" type="submit" value="搜索">
+            </div>
+            <div class="user">
+                <div class="blue_wire"></div>
+                <div class="user_insert">
+                    <div class="user_up">
+                        <div class="user_img_box">
+                            <a class="exit" href="login.html">退出登录</a>
+                            <a href="self.html">
+                                <img class="user_img" src="../pic/touxiang.jpg">
+                            </a>
+                        </div>
+                        <div class="user_name_box">
+                            <p>
+                                <a class="name" href="self.html">用户名</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="user_down">
+                        <ul class="user_ul">
+                            <a href="#">
+                                <li class="fans">
+                                    <p>0</p>
+                                    <p>粉丝</p>
+                                </li>
+                            </a>
+                            <li class="wire"></li>
+                            <a href="#">
+                                <li class="fans">
+
+                                    <p>0</p>
+                                    <p>关注</p>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hot_news">
+                <div class="blue_wire"></div>
+                <h3 style="height: 35px">&nbsp;24小时热门新闻</h3>
+                <ul class="hot_ul">
+                    <li>
+                        <a href="#">
+                            <div class="hot_img_box">
+                                <img class="hot_img" src="../pic/touxiang.jpg">
+                            </div>
+                            <div class="hot_title_box">
+                                <p class="hot_title">王嘉尔官本位表格范围分为非仍无法合并个人版</p>
+                            </div>
+                        </a>
+                    </li>
+                    <hr/>
+                    <li>
+                        <a href="#">
+                            <div class="hot_img_box">
+                                <img class="hot_img" src="../pic/touxiang.jpg">
+                            </div>
+                            <div class="hot_title_box">
+                                <p class="hot_title">王嘉尔官本位表格合并个人版</p>
+                            </div>
+                        </a>
+                    </li>
+                    <hr/>
+                    <li>
+                        <a href="#">
+                            <div class="hot_img_box">
+                                <img class="hot_img" src="../pic/touxiang.jpg">
+                            </div>
+                            <div class="hot_title_box">
+                                <p class="hot_title">王嘉尔官本位表格合并个人版</p>
+                            </div>
+                        </a>
+                    </li>
+                    <hr/>
+                    <li>
+                        <a href="#">
+                            <div class="hot_img_box">
+                                <img class="hot_img" src="../pic/touxiang.jpg">
+                            </div>
+                            <div class="hot_title_box">
+                                <p class="hot_title">王嘉尔官本位表格合并个人版</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="fixed_box">
+        <div class="complaint">
+            <a href="#">举报有害信息</a>
+        </div>
+        <div class="back">
+            <a href="javascript:void(0);" onclick="back()">回到顶部</a>
+        </div>
+    </div>
+</footer>
+
+    <script>//轮播图效果
+        var a = 0;
+        setInterval(function () {
+            $('.buttons>li').removeClass("checked");
+            $('.buttons>li').eq(a).addClass("checked");
+
+            a++;
+            change_class(a);
+            if (a >= 5){
+                a = a % 5;
+            }
+        },3000);
+
+
+        $('.buttons > li').hover(
+            function () {
+                var i = $(this).index();
+                change_class(i);
+            },
+            function () {
+
+            });
+
+        function change_class(i) {
+            $('.link>img').removeClass("image");
+            $('.link>img').addClass("image_hidden");
+            $('.link>img').eq(i).addClass("image");
+            $('.link>img').eq(i).removeClass("image_hidden");
+        }
+    </script>
+
+    <script> //最初始化的加载
+        $(document).ready(function() {
+            $.ajax({
+                type: "POST",
+                url: "IndexLoadingServlet",
+                data: { param: 0 },
+                dataType: "json",
+                success: function (result) {
+                    $(".content_ul").html("");
+                    $.each(result.list,function (index, item) {
+                        var arr = item.image_list.split(',')
+                        $(".content_ul").append(
+                            '<li>\n' +
+                            '  <div class="box">\n' +
+                            '      <div class="pic_box">\n' +
+                            '          <img class="pic" src='+arr[0]+'>\n' +
+                            '      </div>\n' +
+                            '      <div class="content_box">\n' +
+                            '          <div class="title_box">\n' +
+                            '              <a class="title" href="article.html?id="+'+item.id+'>'+item.title+'</a>\n' +
+                            '          </div>\n' +
+                            '          <div class="little_things_box">\n' +
+                            '              <a class="little_tag">flagname</a>\n' +
+                            '                 <span class="little_font_of_time">'+item.crawl_time+'</span>\n' +
+                            '          </div>\n' +
+                            '       </div>\n' +
+                            '   </div>\n' +
+                            '</li>');
+                    });
+                },
+                error: function (jqXHR) { alert("发生错误：" + jqXHR.status);},
+            })
+        })
+
+
+
+        var currentIndex = 0;
+
+    //给按钮设定事件
+        $(document).ready(function() {
+            $('.left_list').each(function (index) {
+                $(this).on('click', function () {
+                    currentIndex = index;
+                    $.ajax({
+                        type: "POST",
+                        url: "IndexLoadingServlet",
+                        data: {
+                            param: index
+                        },
+                        dataType: "json",
+                        success: function (result) {
+                            $(".content_ul").html("");
+                            $.each(result.list,function (index, item) {
+                                var arr = item.image_list.split(',')
+                                $(".content_ul").append(
+                                    '<li>\n' +
+                                    '  <div class="box">\n' +
+                                    '      <div class="pic_box">\n' +
+                                    '          <img class="pic" src='+arr[0]+'>\n' +
+                                    '      </div>\n' +
+                                    '      <div class="content_box">\n' +
+                                    '          <div class="title_box">\n' +
+                                    '              <a class="title" href="article.html?id="+'+item.id+'>'+item.title+'</a>\n' +
+                                    '          </div>\n' +
+                                    '          <div class="little_things_box">\n' +
+                                    '              <a class="little_tag">flagname</a>\n' +
+                                    '                 <span class="little_font_of_time">'+ item.crawl_time +'</span>\n' +
+                                    '          </div>\n' +
+                                    '       </div>\n' +
+                                    '   </div>\n' +
+                                    '</li>');
+                            });
+                        },
+                        error: function (jqXHR) {alert("发生错误：" + jqXHR.status);},
+                    })
+                })
+            })
+        })
+
+
+ //导航栏跟随与瀑布流
+
+        $( window ).on( "load", function(){
+            window.onscroll = function(){//滚动条滚动触发
+                if ($(document).scrollTop() >= 50){
+                    $('.leftNav').addClass('fixed');
+                }else {
+                    $('.leftNav').removeClass('fixed');
+                }
+                if ($(document).scrollTop() >= 350){
+                    $('.hot_news').addClass('fixed');
+                }else{
+                    $('.hot_news').removeClass('fixed');
+                }
+
+                if ($(document).scrollTop() >= $(document).height() - $(window).height()) {
+                    setTimeout(function () {
+                        waterfall();
+                    }, 50);
+                }
+            }
+        });
+
+
+        var currentTime = 0;
+        function waterfall(){
+            currentTime = Number($('.content_ul > li:last-child span').text());
+            console.log("currentTime"+currentTime);
+            $.ajax({
+                type: "POST",
+                url: "AjaxLoadingwaterfallServlet",
+                data: {
+                    param : currentIndex,
+                    num : 4,
+                    counter: currentTime
+                },
+                dataType: "json",
+                success: function (result) {
+                    console.log("currentIndex"+currentIndex);
+                    $.each(result.list,function (index, item) {
+                        var arr = item.image_list.split(',');
+                        $(".content_ul").append(
+                            '<li>\n' +
+                            '  <div class="box">\n' +
+                            '      <div class="pic_box">\n' +
+                            '          <img class="pic" src='+arr[0]+'>\n' +
+                            '      </div>\n' +
+                            '      <div class="content_box">\n' +
+                            '          <div class="title_box">\n' +
+                            '              <a class="title" href="article.html?id="+'+item.id+'>'+item.title+'</a>\n' +
+                            '          </div>\n' +
+                            '          <div class="little_things_box">\n' +
+                            '              <a class="little_tag">flagname</a>\n' +
+                            '                 <span class="little_font_of_time">'+ item.crawl_time +'</span>\n' +
+                            '          </div>\n' +
+                            '       </div>\n' +
+                            '   </div>\n' +
+                            '</li>');
+                    });
+                },
+                error: function (jqXHR) {
+                    alert("发生错误：" + jqXHR.status);
+                },
+            })
+        }
+    </script>
+</body>
+</html>
