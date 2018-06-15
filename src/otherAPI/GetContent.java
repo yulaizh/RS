@@ -21,14 +21,16 @@ public class GetContent {
     static String Str = null;
     static JSONObject dataJson = null;
     static JSONObject response = null;
-    static String uri = "jdbc:mysql://localhost:3306/text?useUnicode=true&characterEncoding=UTF-8";//(数据库名，不是连接名)
+    static String uri = "jdbc:mysql://localhost:3306/RS?useUnicode=true&characterEncoding=UTF-8";//(数据库名，不是连接名)
     static String user = "root";
     static String password = "123456";
     static Connection con = null;
     static PreparedStatement pst = null;
     static Statement st = null;
     static ResultSet rs = null;
-    String usr_id = "lihang";
+
+
+
 
     public static void connection() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.jdbc.Driver");
@@ -67,8 +69,6 @@ public class GetContent {
             String str = null;
             while((str = br.readLine())!=null) {
                 System.out.println(str);
-                str = str.replaceAll("\\\\", "\\\\\\\\");
-                System.out.println(str);
                 sb.append(str);
             }
             Str = sb.toString();
@@ -77,10 +77,14 @@ public class GetContent {
             response = dataJson.getJSONObject("data");
             String ct = response.getString("content");
             System.out.println(ct);
-            String sqll ="update article set content ="+ct+ "where id ="+id;
-
+            String sqll ="update article set content ='"+ct+ "' where id = '"+ id +"'";
             pst = con.prepareStatement(sqll);
-            pst.executeUpdate(sqll);
+            try{
+                pst.executeUpdate();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+
         }
     }
 

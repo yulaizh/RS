@@ -32,8 +32,28 @@ public class DBopLogAndSign {
         }
     }
 
+    public String select(String sql,String sm) throws SQLException{
+        st = con.createStatement();
+        rs = st.executeQuery(sql);
+        if (rs.next()){
+            return rs.getString(sm);
+        } else {
+            return "null";
+        }
+
+    }
+
     public void insert(String sql)throws SQLException{
         st = con.createStatement();
         st.executeUpdate(sql);
     }
+
+
+//    public void test(String sql,String sm)throws SQLException{
+//        st = con.createStatement();
+//        rs = st.executeQuery(sql);
+//        if (rs.next()){
+//            System.out.println(rs.getString(sm));
+//        }
+//    }
 }

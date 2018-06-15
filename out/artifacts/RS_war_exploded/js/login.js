@@ -1,3 +1,12 @@
+//设置快捷键
+document.onkeydown = function (event) {
+    if(event.keyCode ==13)
+    {
+        $('.button').click();
+    }
+}
+
+
 $('.account_input').on('blur',function () {
     if ($('.button').val() == '注册') {     // 注册时，失去焦点就验证账号。
         $.ajax({
@@ -28,31 +37,16 @@ $('.button').on('click',function () {
     $('#output2').html("");
     $('#output3').html("");
     if ($('.button').val() == '登录'){      // 如果是登录就直接验证
-        $.ajax({
-            type:"POST",
-            url:"LogAndSignServlet",
-            data:{
-                account:$('.account_input').val(),
-                password:$('.password_input').val()
-            },
-            dataType:"text",
-            success:function (retu) {
-                if (retu == "true"){
-                    console.log("登录成功");
-                    window.location = "index.html";
-                }else if(retu == "false"){
-                    $('#output2').html('账户或密码错误');
-                }
-
-            },
-            error:function (error) {
-                console.log("发生错误"+error);
-            }
-        })
-    }else if ($('.button').val() == '注册'){
-        if ( $('.password_input').val() == $('.re_password_input').val()) {
+        var isnull = ($('.account_input').val() != "")&&($('.password_input').val() != "");
+        if ($('.account_input').val() == ""){
+            $('#output1').html("请输入账号");
+        }
+        if ($('.password_input').val() == ""){
+            $('#output2').html("请输入密码");
+        }
+        if (isnull){
             $.ajax({
-                type:"GET",
+                type:"POST",
                 url:"LogAndSignServlet",
                 data:{
                     account:$('.account_input').val(),
@@ -60,21 +54,65 @@ $('.button').on('click',function () {
                 },
                 dataType:"text",
                 success:function (retu) {
-                    if (retu){
-                        alert("注册成功");
-                    }else{
-                        $('#output3').html("注册失败，请更换账号重试");
+                    if (retu == "true"){
+                        console.log("登录成功");
+                        window.location = "index.html";
+                    }else if(retu == "false"){
+                        $('#output2').html('账户或密码错误');
                     }
                 },
                 error:function (error) {
                     console.log("发生错误"+error);
                 }
             })
+        }
+    }
+    if ($('.button').val() == '注册'){  //还存在缺陷
+        var isnull = ($('.account_input').val() != "")&&($('.password_input').val() != "")&&($('.re_password_input').val() != "");
+        if ($('.account_input').val() == ""){
+            $('#output1').html("请输入账号");
+        }
+        if ($('.password_input').val() == ""){
+            $('#output2').html("请输入密码");
+        }
+        if ($('.re_password_input').val() == ""){
+            $('#output3').html("请再次输入密码");
+        }
+        if (( $('.password_input').val() != $('.re_password_input').val())) {
+            $('#output3').html("两次输入的密码不一致");
+        }
+        if ($('.password_input').val().length < 6){
+            $('#output2').html("密码的长度应大于等于6");
+        }
+        if (( $('.password_input').val() == $('.re_password_input').val())&&($('.password_input').val().length >= 6)) {
+            if (isnull){
+                $.ajax({
+                    type:"GET",
+                    url:"LogAndSignServlet",
+                    data:{
+                        account:$('.account_input').val(),
+                        password:$('.password_input').val()
+                    },
+                    dataType:"text",
+                    success:function (retu) {
+                        if (retu){
+                            alert("注册成功");
+                        }else{
+                            $('#output3').html("注册失败，请更换账号重试");
+                        }
+                    },
+                    error:function (error) {
+                        console.log("发生错误"+error);
+                    }
+                })
+            }
         }else {
             $('#output3').html('两次输入的密码不一致');
         }
     }
 })
+
+
 
 $('.point_box > button').on('click',function () {
     $('#output1').html("");

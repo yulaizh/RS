@@ -18,12 +18,12 @@ public class IndexLoadingServlet extends HttpServlet {
         int param = Integer.parseInt(request.getParameter("param"));
         String sql = null;
         if (param == 0){
-            sql = "select id,title,image_list,crawl_time,user_add_flag from article order by crawl_time desc limit 4";
+            sql = "select id,title,image_list,crawl_time,tag from article order by crawl_time desc limit 4";
         }else if (param == 1){
-            sql = "select id,title,image_list,crawl_time,user_add_flag from article order by crawl_time desc limit 4";
+            sql = "select id,title,image_list,crawl_time,tag from article order by crawl_time desc limit 4";
         }else if (param > 1){
             param = param - 2;
-            sql = "select id,title,image_list,crawl_time,user_add_flag from article where user_add_flag = '" + param + "' order by crawl_time desc limit 4";
+            sql = "select id,title,image_list,crawl_time,tag from article where user_add_flag = '" + param + "' order by crawl_time desc limit 4";
         }
 
         String result = null;

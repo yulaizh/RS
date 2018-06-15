@@ -18,7 +18,7 @@ public class AjaxLoadingwaterfallServlet extends HttpServlet {
         long counter = Long.parseLong(request.getParameter("counter"));
         String sql = null;
         if (param == 0){
-            sql = "select id,title,image_list,crawl_time,user_add_flag from article where crawl_time < '"+counter+"' order by crawl_time desc limit "+num;
+            sql = "select id,title,image_list,crawl_time,tag from article where crawl_time < '"+counter+"' order by crawl_time desc limit "+num;
         }else if (param == 1){
             sql = "select id,title,image_list,crawl_time,user_add_flag from article where crawl_time < '"+counter+"' order by crawl_time desc limit "+num;
         }else if (param > 1){
