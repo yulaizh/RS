@@ -50,7 +50,5 @@ public class BDdbop {
         pst = con.prepareStatement(sql);
         pst.setString(1,container);
         pst.executeUpdate();
-
-
     }
 }

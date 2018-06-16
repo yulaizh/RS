@@ -91,4 +91,10 @@ public class DBopeartion {
     }
 
 
+    public void update(String sql)throws SQLException{
+        pst = con.prepareStatement(sql);
+        pst.executeUpdate();
+    }
+
+
 }
