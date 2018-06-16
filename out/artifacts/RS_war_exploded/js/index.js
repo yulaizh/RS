@@ -1,4 +1,3 @@
-alert(111);
 
 //轮播图效果
 setInterval(function () {
@@ -38,7 +37,7 @@ $(document).ready(function() {
         dataType: "json",
         success: function (result) {
             $(".content_ul").html("");
-            $.each(result.list,function (index, item) {
+            $.each(result,function (index, item) {
                 var arr = item.image_list.split(',')
                 $(".content_ul").append(
                     '<li>\n' +
@@ -51,7 +50,7 @@ $(document).ready(function() {
                     "             <a class='title' href=\"article.html?id="+item.id+"\">"+item.title+"</a>\n" +
                     '          </div>\n' +
                     '          <div class="little_things_box">\n' +
-                    '              <a class="little_tag">flagname</a>\n' +
+                    '              <a class="little_tag">'+item.tag+'</a>\n' +
                     '                 <span class="little_font_of_time">'+item.crawl_time+'</span>\n' +
                     '          </div>\n' +
                     '       </div>\n' +
@@ -81,7 +80,7 @@ $(document).ready(function() {
                 dataType: "json",
                 success: function (result) {
                     $(".content_ul").html("");
-                    $.each(result.list,function (index, item) {
+                    $.each(result,function (index, item) {
                         var arr = item.image_list.split(',')
                         $(".content_ul").append(
                             '<li>\n' +
@@ -138,7 +137,7 @@ function waterfall(){
     console.log("currentTime"+currentTime);
     $.ajax({
         type: "POST",
-        url: "AjaxLoadingwaterfallServlet",
+        url: "WaterfallServlet",
         data: {
             param : currentIndex,
             num : 4,
@@ -147,7 +146,7 @@ function waterfall(){
         dataType: "json",
         success: function (result) {
             console.log("currentIndex"+currentIndex);
-            $.each(result.list,function (index, item) {
+            $.each(result,function (index, item) {
                 var arr = item.image_list.split(',');
                 $(".content_ul").append(
                     '<li>\n' +

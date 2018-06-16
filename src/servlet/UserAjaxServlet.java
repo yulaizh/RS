@@ -1,6 +1,7 @@
 package servlet;
 
-import db.DBopLogAndSign;
+
+import db.DBopeartion;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,15 +15,19 @@ import java.io.IOException;
 public class UserAjaxServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        DBopLogAndSign dBopLogAndSign = new DBopLogAndSign();
+        DBopeartion dBopeartion = new DBopeartion();
         String name = (String)session.getAttribute("account");
         long id = Long.parseLong((String) session.getAttribute("id"));
         String sql = "select pic_url from user_info where id = '"+ id +"'";
         String json = null;
         try{
-            dBopLogAndSign.Connection();
-            json = "{\"name\":\""+name +"\",\"url\":\""+ dBopLogAndSign.select(sql,"pic_url") +"\"}";
-            dBopLogAndSign.close();
+            dBopeartion.Connection();
+
+
+            json = "{\"name\":\""+name +"\",\"url\":\""+ dBopeartion.select(sql,"pic_url") +"\"}";
+
+
+            dBopeartion.close();
         }catch (Exception e){
             e.printStackTrace();
         }

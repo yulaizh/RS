@@ -7,19 +7,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3c4a83e-36d2-4ef3-a6d4-dd1bb269d654" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/servlet/LikeandDislikeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/json.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bean/ArticleBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bean/ArticleListBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsonPackage/PackagetoJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/servlet/Article_conmentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/servlet/Article_infoServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RS_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/RS_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/ArticleAjaxServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/ArticleAjaxServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/db/DBopLogAndSign.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/db/DBopeartion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/db/DBopeartion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/AjaxLoadingwaterfallServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/AjaxLoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/ArticleAjaxServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/IndexLoadingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/IndexLoadingServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/LogAndSignServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/LogAndSignServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/UserAjaxServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/UserAjaxServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/css/article.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/css/article.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/self.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/self.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/ArticleAjaxServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/servlet/ArticleAjaxServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baiduAPI/BDdbop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baiduAPI/BDdbop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/db/DBopLogAndSign.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/db/DBopeartion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/db/DBopeartion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/AjaxLoadingwaterfallServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/AjaxLoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/ArticleAjaxServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/IndexLoadingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/servlet/IndexLoadingServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/LogAndSignServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/servlet/LogAndSignServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/UserAjaxServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/servlet/UserAjaxServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/DBopLogAndSign.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db/DBopeartion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBopeartion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/ArticleAjaxServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/ArticleAjaxServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/AjaxLoadingwaterfallServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/WaterfallServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/AjaxLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/SignAsynchronousServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/ArticleAjaxServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/IndexLoadingServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/IndexLoadingServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/LikeandDislikeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/LikeandDislikeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/LogAndSignServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/LogAndSignServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/UserAjaxServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/UserAjaxServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/article.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/article.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/self.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/self.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/login.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,46 +83,7 @@
     <favorites_list name="RS" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="article.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/article.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-251">
-              <caret line="231" column="28" selection-start-line="231" selection-start-column="28" selection-end-line="231" selection-end-column="28" />
-              <folding>
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LikeandDislikeServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/servlet/LikeandDislikeServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBopeartion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/db/DBopeartion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="94" selection-start-line="94" selection-end-line="94" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -118,15 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/otherAPI/weather.java" />
-        <option value="$PROJECT_DIR$/src/otherAPI/Getflag.java" />
-        <option value="$PROJECT_DIR$/web/css/a'a.css" />
-        <option value="$PROJECT_DIR$/src/otherAPI/GetTitle.java" />
-        <option value="$PROJECT_DIR$/src/otherAPI/AipNlp.java" />
-        <option value="$PROJECT_DIR$/src/otherAPI/AuthService.java" />
-        <option value="$PROJECT_DIR$/web/aa.html" />
-        <option value="$PROJECT_DIR$/src/otherAPI/Sample.java" />
-        <option value="$PROJECT_DIR$/src/otherAPI/test.java" />
         <option value="$PROJECT_DIR$/src/baiduAPI/HttpUtil.java" />
         <option value="$PROJECT_DIR$/src/aa/APIConstants.java" />
         <option value="$PROJECT_DIR$/src/baiduAPI/test.java" />
@@ -148,27 +131,36 @@
         <option value="$PROJECT_DIR$/web/test.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/db/DBopLogAjax.java" />
-        <option value="$PROJECT_DIR$/src/servlet/AjaxLoginServlet.java" />
         <option value="$PROJECT_DIR$/web/login.html" />
-        <option value="$PROJECT_DIR$/web/js/login.js" />
-        <option value="$PROJECT_DIR$/src/servlet/LogAndSignServlet.java" />
-        <option value="$PROJECT_DIR$/src/db/DBopLogAndSign.java" />
-        <option value="$PROJECT_DIR$/src/servlet/UserAjaxServlet.java" />
         <option value="$PROJECT_DIR$/web/js/indexAjax.js" />
-        <option value="$PROJECT_DIR$/web/js/index.js" />
         <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/74e40e7a-612a-47bd-ab62-bb76e8c47073/console.sql" />
-        <option value="$PROJECT_DIR$/src/test.java" />
-        <option value="$PROJECT_DIR$/src/servlet/AjaxLoadingwaterfallServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/IndexLoadingServlet.java" />
         <option value="$PROJECT_DIR$/src/otherAPI/GetContent.java" />
         <option value="$PROJECT_DIR$/web/self.html" />
-        <option value="$PROJECT_DIR$/src/servlet/ArticleAjaxServlet.java" />
         <option value="$PROJECT_DIR$/web/css/article.css" />
-        <option value="$PROJECT_DIR$/web/article.html" />
         <option value="$PROJECT_DIR$/src/baiduAPI/BDdbop.java" />
+        <option value="$PROJECT_DIR$/src/servlet/AjaxLoadingwaterfallServlet.java" />
+        <option value="$PROJECT_DIR$/src/bean/articleBean.java" />
+        <option value="$PROJECT_DIR$/src/servlet/IndexLoadingServlet.java" />
+        <option value="$PROJECT_DIR$/src/jsonPackage/PackagetoJson.java" />
+        <option value="$PROJECT_DIR$/src/servlet/WaterfallServlet.java" />
+        <option value="$PROJECT_DIR$/src/db/DBopLogAndSign.java" />
         <option value="$PROJECT_DIR$/src/db/DBopeartion.java" />
+        <option value="$PROJECT_DIR$/src/servlet/UserAjaxServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/LogAndSignServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/AjaxLoginServlet.java" />
+        <option value="$PROJECT_DIR$/web/js/index.js" />
+        <option value="$PROJECT_DIR$/src/servlet/SignAsynchronousServlet.java" />
+        <option value="$PROJECT_DIR$/web/js/login.js" />
+        <option value="$PROJECT_DIR$/src/servlet/ArticleAjaxServlet.java" />
+        <option value="$PROJECT_DIR$/src/bean/Article_UserBean.java" />
+        <option value="$PROJECT_DIR$/web/article.html" />
+        <option value="$PROJECT_DIR$/src/servlet/Article_conmentServlet.java" />
+        <option value="$PROJECT_DIR$/src/bean/ArticleBean.java" />
         <option value="$PROJECT_DIR$/src/servlet/LikeandDislikeServlet.java" />
+        <option value="$PROJECT_DIR$/src/test.java" />
+        <option value="$PROJECT_DIR$/src/servlet/Article_infoServlet.java" />
+        <option value="$PROJECT_DIR$/web/js/article.js" />
       </list>
     </option>
   </component>
@@ -215,48 +207,7 @@
             <path>
               <item name="RS" type="b2602c69:ProjectViewProjectNode" />
               <item name="RS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="baiduAPI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="otherAPI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -275,7 +226,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -484,7 +435,6 @@
     </configuration>
     <configuration name="login.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.51" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login.html" />
-      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="RS:war exploded">
           <settings>
@@ -570,10 +520,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Tomcat Server.index.html" />
         <item itemvalue="Tomcat Server.login.html" />
-        <item itemvalue="Application.GetContent" />
+        <item itemvalue="Tomcat Server.index.html" />
         <item itemvalue="Application.test" />
+        <item itemvalue="Application.GetContent" />
         <item itemvalue="Tomcat Server.test.jsp" />
       </list>
     </recent_temporary>
@@ -605,12 +555,12 @@
       <workItem from="1528896332597" duration="37000" />
       <workItem from="1528896639072" duration="14189000" />
       <workItem from="1528973896543" duration="6805000" />
-      <workItem from="1528981473064" duration="12392000" />
+      <workItem from="1528981473064" duration="31100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89227000" />
+    <option name="totallyTimeSpent" value="107935000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -623,37 +573,36 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1440" height="817" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.15555556" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297568" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3297568" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" weight="0.3297568" />
+      <window_info anchor="right" id="Database" order="5" weight="0.3297568" />
       <window_info id="Structure" order="1" sideWeight="0.15461847" side_tool="true" weight="0.22246066" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32916668" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32916668" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32916668" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" x="401" y="562" width="982" height="152" id="Run" order="3" visible="true" weight="0.2611111" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" x="401" y="562" width="982" height="152" id="Run" order="3" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32916668" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32916668" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.9116541" visible="true" weight="0.22532189" />
-      <window_info id="Web" order="2" sideWeight="0.08834586" side_tool="true" visible="true" weight="0.22532189" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" sideWeight="0.09861111" side_tool="true" weight="0.22246066" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.90555555" visible="true" weight="0.22532189" />
+      <window_info id="Web" order="6" sideWeight="0.094444446" side_tool="true" visible="true" weight="0.22532189" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="4" sideWeight="0.09861111" side_tool="true" weight="0.22246066" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -667,59 +616,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6810">
-          <caret line="454" column="40" lean-forward="true" selection-start-line="454" selection-start-column="40" selection-end-line="454" selection-end-column="40" />
-          <folding>
-            <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="107" column="22" lean-forward="true" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/baiduAPI/keyword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/self.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -727,7 +627,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AjaxLoadingwaterfallServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/servlet/WaterfallServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="38" selection-end-column="43" />
@@ -769,7 +669,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AjaxLoadingwaterfallServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/servlet/WaterfallServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="8" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="38" selection-end-column="43" />
@@ -861,31 +761,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="134" column="39" lean-forward="true" selection-start-line="134" selection-start-column="39" selection-end-line="134" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/otherAPI/ReadURL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="69" column="33" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/otherAPI/GetTitle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/indexAjax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -903,83 +782,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/IndexLoadingServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AjaxLoadingwaterfallServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/UserAjaxServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" column="70" lean-forward="true" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AjaxLoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/LogAndSignServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="67" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/otherAPI/GetContent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-69">
           <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="296" column="7" lean-forward="true" selection-start-line="296" selection-start-column="7" selection-end-line="296" selection-end-column="7" />
-          <folding>
-            <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/self.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="108" column="104" lean-forward="true" selection-start-line="108" selection-start-column="104" selection-end-line="108" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="21" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/ArticleAjaxServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="39" column="54" lean-forward="true" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -1011,20 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/DBopLogAndSign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/baiduAPI/BDdbop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1032,35 +824,198 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/article.html">
+    <entry file="file://$PROJECT_DIR$/src/bean/LoadBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-251">
-          <caret line="231" column="28" selection-start-line="231" selection-start-column="28" selection-end-line="231" selection-end-column="28" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/DBopeartion.java">
+    <entry file="file://$PROJECT_DIR$/src/db/DBopLogAndSign.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jsonPackage/PackagetoJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="51" lean-forward="true" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/indexAjax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bean/ArticleListBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/self.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="117" column="36" lean-forward="true" selection-start-line="117" selection-start-column="36" selection-end-line="117" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bean/ArticleBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/otherAPI/ReadURL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="69" column="33" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="229" column="18" lean-forward="true" selection-start-line="229" selection-start-column="18" selection-end-line="229" selection-end-column="18" />
+          <folding>
+            <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/DBopeartion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-297">
+          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/Article_conmentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/Article_infoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="834">
+          <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/IndexLoadingServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/LikeandDislikeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+        <state relative-caret-position="-212">
+          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/LogAndSignServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/SignAsynchronousServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="84" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/UserAjaxServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/WaterfallServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1143,6 +1098,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>json</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,6 +1,6 @@
 package servlet;
 
-import db.DBopLogAndSign;
+import db.DBopeartion;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,12 +19,12 @@ public class LogAndSignServlet extends HttpServlet {
         String password = request.getParameter("password");
         String sql = "select id from user_log where account = '" + account + "' and password = '" + password + "'";
         Boolean retu  = false;
-        DBopLogAndSign dBopLogAndSign = new DBopLogAndSign();
+        DBopeartion dBopeartion = new DBopeartion();
         String id = null;
         try {
-            dBopLogAndSign.Connection();
-            id = dBopLogAndSign.select(sql,"id");
-            dBopLogAndSign.close();
+            dBopeartion.Connection();
+            id = dBopeartion.select(sql,"id");
+            dBopeartion.close();
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -37,6 +37,9 @@ public class LogAndSignServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         response.getWriter().write(retu.toString());
     }
+
+
+
     //注册
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String account = request.getParameter("account");
@@ -45,20 +48,20 @@ public class LogAndSignServlet extends HttpServlet {
         String insertSql = "insert into user_log(account,password) values ('"+account+"','"+password+"')";
 
         Boolean retu  = false;
-        DBopLogAndSign dBopLogAndSign = new DBopLogAndSign();
+        DBopeartion dBopeartion = new DBopeartion();
+
         try {
-            dBopLogAndSign.Connection();
-            retu =  dBopLogAndSign.select(sql);
-            System.out.println(retu);
-            System.out.println(insertSql);
+            dBopeartion.Connection();
+            retu =  dBopeartion.isExist(sql);
+
             if (retu){
-                dBopLogAndSign.insert(insertSql);
-                if (!dBopLogAndSign.select(sql,"id").equals(null)){
-                    String insertSql_info = "insert into user_info (id) values ('"+ dBopLogAndSign.select(sql,"id") +"')";
-                    dBopLogAndSign.insert(insertSql_info);
+                dBopeartion.insert(insertSql);
+                if (!dBopeartion.select(sql,"id").equals(null)){
+                    String insertSql_info = "insert into user_info (id) values ('"+ dBopeartion.select(sql,"id") +"')";
+                    dBopeartion.insert(insertSql_info);
                 }
             }
-            dBopLogAndSign.close();
+            dBopeartion.close();
         }catch (Exception e){
             e.printStackTrace();
         }

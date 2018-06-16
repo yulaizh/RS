@@ -1,6 +1,6 @@
 package servlet;
 
-import db.DBopLogAndSign;
+import db.DBopeartion;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,17 +9,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "AjaxLoginServlet",urlPatterns = "/AjaxLoginServlet")
-public class AjaxLoginServlet extends HttpServlet {
+@WebServlet(name = "SignAsynchronousServlet",urlPatterns = "/SignAsynchronousServlet")
+public class SignAsynchronousServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String accept = request.getParameter("account");
         String sql = "select account from user_log where account = '"+ accept +"'";
         Boolean retu  = false;
-        DBopLogAndSign dBopLogAndSign = new DBopLogAndSign();
+        DBopeartion dBopeartion = new DBopeartion();
+
         try {
-            dBopLogAndSign.Connection();
-            retu =  dBopLogAndSign.select(sql);
-            dBopLogAndSign.close();
+            dBopeartion.Connection();
+            retu =  dBopeartion.isExist(sql);
+            dBopeartion.close();
         }catch (Exception e){
             e.printStackTrace();
 

@@ -11,7 +11,7 @@ $('.account_input').on('blur',function () {
     if ($('.button').val() == '注册') {     // 注册时，失去焦点就验证账号。
         $.ajax({
             type:"POST",
-            url:"AjaxLoginServlet",
+            url:"SignAsynchronousServlet",
             data:{
                 account:$('.account_input').val()
             },

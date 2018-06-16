@@ -59,6 +59,9 @@ css在同一目录下
                         <div class="artInfo">
                             <span>作者</span>
                             <span>2018年01月31号</span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
                     </div>
                     <div class="artMain">
@@ -226,83 +229,6 @@ css在同一目录下
         
     </div>
 </body>
-<script>
-
-    $(document).ready(function () {
-        //增加 点赞样式加载，，以及评论的加载
-        $.ajax({
-            type:"post",
-            url:"ArticleAjaxServlet",
-            data:{
-                id:getUrlParam('id')
-            },
-            dateType:"json",
-            success:function (data) {
-                $('.artHead > h1').html(data.data.title);
-                $('.artMain').html(data.data.content);
-            },
-            error:function (error) {
-                console.log("发生错误"+error.status);
-            }
-        })
-
-
-
-
-
-        $('.artPosNeg > input').each(function(index){
-            $(this).on('click',function(){
-                console.log($(this).css("color"))
-                if ($(this).css("color") == "rgb(255, 255, 255)"){
-                    console.log(33);
-                    $(this).css("color","red");
-
-                    $.ajax({
-                        type:"POST",
-                        url:"LikeandDislikeServlet",
-                        data:{
-                            param:index,
-                            id:getUrlParam('id')
-                        },
-                        success:function(){
-                            console.log("更新成功"+index+"+1")
-                        },
-                        error:function (error) {
-                            console.log("发生错误"+error.status);
-                        },
-                    })
-                }
-                else if ($(this).css("color") == "rgb(255, 0, 0)"){
-                    console.log(33);
-                    $(this).css("color","#ffffff");
-
-                    $.ajax({
-                        type:"GET",
-                        url:"LikeandDislikeServlet",
-                        data:{
-                            param:index,
-                            id:getUrlParam('id')
-                        },
-                        success:function(){
-                            console.log("更新成功"+index+"-1")
-                        },
-                        error:function (error) {
-                            console.log("发生错误"+error.status);
-                        },
-                    })
-                }
-            })
-        })
-
-    })
-
-    function getUrlParam(name){
-        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-        var r = window.location.search.substr(1).match(reg);
-        if (r!=null) return unescape(r[2]);
-        return null;
-    }
-
-</script>
+<script type="text/javascript" src="js/article.js"></script>
 
 </html>
