@@ -30,18 +30,17 @@
                 width: 75px;
                 height: 35px;
                 outline: none;
-                background-color: #8FDAFF;
-                border-width: 0px;
-                border-radius: 5px;
                 margin-left: 30px;
                 cursor: pointer;
                 text-align: center;
                 color: black;
                 line-height: 35px;
+                border: 1px solid #8FDAFF;
+                border-radius: 5px;
             }
 
             .checked{
-                background-color: #333333;
+                background-color: #8FDAFF;
             }
         .birth_input{
             margin: 10px 0px 0px 50px;
@@ -104,6 +103,10 @@
                 color: black;
                 line-height: 40px;
             }
+
+            #cancel{
+                display: none;
+            }
     </style>
 </head>
 <body>
@@ -131,16 +134,17 @@
             <input type="text">
         </div>
         <div class="button">
-            <a href="javascript:;">修改</a>
-            <a href="javascript:;">确认</a>
+            <a id="cancel" href="javascript:;">取消</a>
+            <a id="revise" href="javascript:;">修改</a>
+            <a id="confirm" href="javascript:;">确认</a>
         </div>
     </div>
 
 </body>
+<script type="text/javascript" src="../js/pcs.js"></script>
 <script>
-    var provinceArray = ["浙江省","北京市","上海市","广州省","天津市","河北省","河南省","黑龙江省","辽宁省","四川省","江苏省","广西省","云南省","安徽省","新疆省","海南省"];
-    var city = ["杭州市","湖州市","温州市","上海市","北京市"];
-    var sector = ["西湖区","江干区","滨江区","上城区","下城区"];
+    var canRevise = false;
+
     $(document).ready(function () {
         for (var i=1990;i<=2018;i++) {
             $('#year').append("<option value="+i+">"+i+"</option>");
@@ -151,17 +155,75 @@
         for (var i=1;i<=31;i++) {
             $('#day').append("<option value="+i+">"+i+"</option>");
         }
-        for (var i=0;i < provinceArray.length;i++) {
-            $('#province').append("<option value="+provinceArray[i]+">"+provinceArray[i]+"</option>");
-        }
-        for (var i=0;i < city.length;i++) {
-            $('#city').append("<option value="+city[i]+">"+city[i]+"</option>");
-        }
-        for (var i=0;i < sector.length;i++) {
-            $('#sector').append("<option value="+sector[i]+">"+sector[i]+"</option>");
-        }
+        // for (var i=0;i < provinceArray.length;i++) {
+        //     $('#province').append("<option value="+provinceArray[i]+">"+provinceArray[i]+"</option>");
+        // }
+        // for (var i=0;i < city.length;i++) {
+        //     $('#city').append("<option value="+city[i]+">"+city[i]+"</option>");
+        // }
+        // for (var i=0;i < sector.length;i++) {
+        //     $('#sector').append("<option value="+sector[i]+">"+sector[i]+"</option>");
+        // }
+
+        $.ajax({
+            type:"get",
+            url:"User_infoServlet",
+            dataType:"json",
+            success:function () {
+                
+            },
+            error:function (error) {
+                console.log("发生错误"+error.status)
+            }
+        })
+        
+        $('#cancel').on('click',function () {
+            if (canRevise){
+                canRevise = false;
+                $('#cancel').css('display','none');
+            }
+        })
+
+        $('#revise').on('click',function () {
+
+            if (!canRevise){
+                canRevise = true;
+                $('#cancel').css('display','inline-block');
+            }
+        })
+
+        $('#confirm').on('click',function () {
+            if (canRevise){
+                canRevise = false;
+                $.ajax({
+                    type:"post",
+                    url:"User_infoServlet",
+                    data:{
+
+                    },
+                    success:function () {
+
+                    },
+                    error:function (error) {
+                        console.log("发生错误"+error.status)
+                    }
+                })
+                location.reload();
+            }
+        })
+
+        $('.sex_input > a').each(function (index) {
+            $(this).on('click',function () {
+                $('.sex_input > a').removeClass("checked");
+                $(this).addClass("checked");
+            })
+
+        })
+
 
     });
+
+
 
 
 </script>

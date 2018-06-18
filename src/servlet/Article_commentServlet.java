@@ -1,6 +1,6 @@
 package servlet;
 
-import db.DBopeartion;
+import db.ConPools;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 
 @WebServlet(name = "Article_commentServlet" ,urlPatterns = "/Article_commentServlet")
 public class Article_commentServlet extends HttpServlet {
@@ -16,11 +18,13 @@ public class Article_commentServlet extends HttpServlet {
         String article_id = request.getParameter("id");
         String comment = request.getParameter("comment");
         String sql = "insert into comment(article_id,user_id,comment_time,comment_content) values (\""+article_id+"\",\""+user_id+"\",\""+System.currentTimeMillis()+"\",\""+comment+"\")";
-        DBopeartion dBopeartion = new DBopeartion();
+        Connection con = null;
+        PreparedStatement pst = null;
         try{
-            dBopeartion.Connection();
-            dBopeartion.insert(sql);
-            dBopeartion.close();
+            con = ConPools.getInstance().getConnection();
+            pst = con.prepareStatement(sql);
+            pst.executeUpdate();
+            con.close();
         }catch (Exception e){
             e.printStackTrace();
         }

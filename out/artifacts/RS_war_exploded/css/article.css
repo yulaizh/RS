@@ -10,6 +10,11 @@ ul,li{
 a{
     text-decoration: none;
 }
+
+.fixed{
+    position: fixed;
+    top: 10px;
+}
 /**********************************************************/
 
 
@@ -167,19 +172,16 @@ a{
 
     }
 
-    .comEditText textarea {
+    .comEditText input {
         width: 568px;
-        height: 32px;
-        /*border: 0px 0px 0px 0px;*/
+        height: 45px;
         border: 0px;
-        padding: 13px 0px 0px 10px;
+        padding-left:10px;
         position: absolute;
-        /*border-radius: 5px;*/
-        font-size: 19px;
-        /*line-height: 45px;*/
-        /*position: absolute;*/
         background-color: #F1F2F4;
-
+        font-size: 30px;
+        line-height: 30px;
+        outline: none;
     }
 
     .comEditButton {
@@ -190,55 +192,55 @@ a{
         width: 77px;
         height: 45px;
         padding: 0px;
-        /*border: 0px 0px 0px 0px;*/
-
         position: absolute;
         margin-left: 578px;
         border: 0px;
         background-color: #8FDAFD;
         font-size: 19px;
         color: #ffffff;
-        /*margin-left: 578px;*/
-        /*position: absolute;*/
     }
 
     .comMain {
-        /*position: absolute;*/
-        /*height: 60px;*/
         display: flex;
-        margin: 0px 0px 20px 0px;
+        border-top: 1px solid #f2f2f2 ;
+        width: 100%;
+        height: 110px;
     }
 
-    .comLeft {
-        /*position: absolute;*/
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        width: 40px;
-    }
+        .comLeft {
+            margin: 20px 0px 0px 10px;
+            width: 50px;
+            height: 50px;
+        }
 
-    .comLeft img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50px;
-    }
+            .comLeft img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+            }
 
-    .comRight {
-        display: flex;
-        /*position: absolute;*/
-        flex-direction: column;
-        width: 635px;
-        margin: 0px 0px 0px 20px;
-    }
+        .comRight {
+            display: flex;
+            flex-direction: column;
+            width: 635px;
+            height: 100px;
+            margin-left: 15px;
+        }
 
-    .comRight comUserName {
-        /*display: block;*/
-        /*width: 605px;*/
-    }
+            .comUserName{
+                height: 20px;
+                font-size: 20px;
+                margin-top: 5px;
+            }
 
-    .comRight comContent {
-        /*display: block;*/
-        /*width: 605px;*/
-    }
+            .comContent {
+                margin-top: 15px;
+                height: 65px;
+            }
+            .comRecom{
+                height: 20px;
+                margin-bottom: 0px;
+            }
 /*****************************************************************/
 .right {
     width: 340px;

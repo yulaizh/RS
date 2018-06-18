@@ -1,6 +1,6 @@
 package servlet;
 
-import db.DBopeartion;
+import db.ConPools;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,6 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 @WebServlet(name = "SignAsynchronousServlet",urlPatterns = "/SignAsynchronousServlet")
 public class SignAsynchronousServlet extends HttpServlet {
@@ -15,11 +18,19 @@ public class SignAsynchronousServlet extends HttpServlet {
         String accept = request.getParameter("account");
         String sql = "select account from user_log where account = '"+ accept +"'";
         Boolean retu  = false;
-        DBopeartion dBopeartion = new DBopeartion();
+        Connection con = null;
+        PreparedStatement pst = null;
+        ResultSet rs = null;
         try {
-            dBopeartion.Connection();
-            retu =  dBopeartion.isExist(sql);
-            dBopeartion.close();
+            con = ConPools.getInstance().getConnection();
+            pst = con.prepareStatement(sql);
+            rs = pst.executeQuery();
+            if (rs.next()){
+                retu = false;   //查到了返回false
+            }else {
+                retu = true;
+            }
+            con.close();
         }catch (Exception e){ e.printStackTrace(); }
         response.setContentType("application/json; charset=utf-8");
         response.setCharacterEncoding("UTF-8");

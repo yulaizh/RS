@@ -27,6 +27,23 @@ function change_class(i) {
     $('.link>img').eq(i).removeClass("image_hidden");
 }
 
+$(document).ready(function () {
+    $.ajax({
+        type:"post",
+        url:"",
+        dataType:"json",
+        success:function () {
+            
+        },
+        error:function (error) {
+            console.log("发生错误"+error);
+        }
+    })
+    
+})
+
+
+
 
 //页面初始化
 $(document).ready(function() {

@@ -1,7 +1,7 @@
 package servlet;
 
 import bean.HotNewsBean;
-import db.DBopeartion;
+import db.ConPools;
 import net.sf.json.JSONArray;
 
 import javax.servlet.ServletException;
@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,13 +20,16 @@ import java.util.List;
 public class HotNewsServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String sql = "select id,title,image_list from article order by readss desc limit 4";
-        DBopeartion dBopeartion = new DBopeartion();
-        ResultSet rs = null;
         List<HotNewsBean> list = new ArrayList<>();
         JSONArray jsonArray;
+        Connection con = null;
+        PreparedStatement pst = null;
+        ResultSet rs = null;
+
         try {
-            dBopeartion.Connection();
-            rs = dBopeartion.select(sql);
+            con = ConPools.getInstance().getConnection();
+            pst = con.prepareStatement(sql);
+            rs = pst.executeQuery();
             while (rs.next()){
                 HotNewsBean hotNewsBean = new HotNewsBean();
                 hotNewsBean.setHref("article.html?id="+rs.getString("id"));
@@ -33,7 +38,7 @@ public class HotNewsServlet extends HttpServlet {
                 list.add(hotNewsBean);
             }
 
-            dBopeartion.close();
+            con.close();
         }catch (Exception e){
             e.printStackTrace();
         }

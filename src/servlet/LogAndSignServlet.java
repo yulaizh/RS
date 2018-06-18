@@ -1,6 +1,6 @@
 package servlet;
 
-import db.DBopeartion;
+import db.ConPools;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 @WebServlet(name = "LogAndSignServlet",urlPatterns = "/LogAndSignServlet")
 public class LogAndSignServlet extends HttpServlet {
@@ -19,12 +22,20 @@ public class LogAndSignServlet extends HttpServlet {
         String password = request.getParameter("password");
         String sql = "select id from user_log where account = '" + account + "' and password = '" + password + "'";
         Boolean retu  = false;
-        DBopeartion dBopeartion = new DBopeartion();
         String id = null;
+        Connection con = null;
+        PreparedStatement pst = null;
+        ResultSet rs = null;
         try {
-            dBopeartion.Connection();
-            id = dBopeartion.select(sql,"id");
-            dBopeartion.close();
+            con = ConPools.getInstance().getConnection();
+            pst = con.prepareStatement(sql);
+            rs = pst.executeQuery();
+            if (rs.next()){
+                id = rs.getString("id");
+            }else {
+                id = null;
+            }
+            con.close();
         }catch (Exception e){ e.printStackTrace();}
 
         retu = id.equals(null)?false:true;
@@ -45,22 +56,44 @@ public class LogAndSignServlet extends HttpServlet {
         String password = request.getParameter("password");
         String sql = "select id from user_log where account = '" + account + "' and password = '" + password + "'";
         String insertSql = "insert into user_log(account,password) values ('"+account+"','"+password+"')";
-
+        Connection con = null;
+        PreparedStatement pst = null;
+        ResultSet rs = null;
         Boolean retu  = false;
-        DBopeartion dBopeartion = new DBopeartion();
+        String id = null;
 
         try {
-            dBopeartion.Connection();
-            retu =  dBopeartion.isExist(sql);
+            con = ConPools.getInstance().getConnection();
+
+            pst = con.prepareStatement(sql);
+            rs = pst.executeQuery();
+            if (rs.next()){
+                retu = false;   //查到了返回false
+            }else {
+                retu = true;
+            }
+
 
             if (retu){
-                dBopeartion.insert(insertSql);
-                if (!dBopeartion.select(sql,"id").equals(null)){
-                    String insertSql_info = "insert into user_info (id) values ('"+ dBopeartion.select(sql,"id") +"')";
-                    dBopeartion.insert(insertSql_info);
+                pst = con.prepareStatement(insertSql);
+                pst.executeUpdate();
+
+                pst = con.prepareStatement(sql);
+                rs = pst.executeQuery();
+                if (rs.next()){
+                    id = rs.getString("id");
+                }else {
+                    id = null;
+                }
+
+                if (!id.equals(null)){
+                    String insertSql_info = "insert into user_info (id) values ('"+ id +"')";
+
+                    pst = con.prepareStatement(insertSql_info);
+                    pst.executeUpdate();
                 }
             }
-            dBopeartion.close();
+            con.close();
         }catch (Exception e){ e.printStackTrace(); }
 
         response.setContentType("application/json; charset=utf-8");

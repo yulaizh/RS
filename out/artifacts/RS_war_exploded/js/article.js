@@ -41,6 +41,9 @@ $(document).ready(function () {
                     '       <div class="comContent">' +
                     '           <p>'+ item.comment_content +'</p>' +
                     '       </div>' +
+                    '       <div class="comRecom">'+
+                    '           <a href="#">回复</a>'+
+                    '       </div>'+
                     '   </div>' +
                     '</div>');
             })
@@ -111,13 +114,13 @@ $(document).ready(function () {
 
     //提交评论添加事件。
     $('.comEditButton > input').on('click',function () {
-        console.log(getUrlParam("id")+$('.comEditText > textarea').val())
+        console.log(getUrlParam("id")+$('.comEditText > input').val())
         $.ajax({
             type:"POST",
             url:"Article_commentServlet",
             data:{
                 id:getUrlParam("id"),
-                comment:$('.comEditText > textarea').val()
+                comment:$('.comEditText > input').val()
             },
             dataType:"text",
             success:function(){
@@ -131,7 +134,16 @@ $(document).ready(function () {
         })
     })
 
+    window.onscroll = function() {//滚动条滚动触发
+        if ($(document).scrollTop() >= 350) {
+            $('.hot_news').addClass('fixed');
+        } else {
+            $('.hot_news').removeClass('fixed');
+        }
+    }
+
 })
+
 
 function getUrlParam(name){
     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");

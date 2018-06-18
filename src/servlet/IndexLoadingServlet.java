@@ -1,7 +1,6 @@
 package servlet;
 
-import bean.LoadBean;
-import db.DBopeartion;
+import db.ConPools;
 import jsonPackage.PackagetoJson;
 
 import javax.servlet.ServletException;
@@ -9,8 +8,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 
@@ -20,7 +20,9 @@ public class IndexLoadingServlet extends HttpServlet {
         String param = request.getParameter("param");
         String sql = null;
         String result = null;
-        DBopeartion dBopeartion = new DBopeartion();
+        Connection con = null;
+        PreparedStatement pst = null;
+        ResultSet rs = null;
         switch (param){
             case "推荐": sql = "select * from article order by id desc limit 4";break;   //推荐待做
             case "综合": sql = "select * from article where tag not in ('社会','娱乐','财经','科技','文化','教育','时事','国际','旅游','体育','汽车','时尚','') order by id desc limit 4";break;
@@ -40,10 +42,11 @@ public class IndexLoadingServlet extends HttpServlet {
         }
 
         try {
-            dBopeartion.Connection();
-            ResultSet rs = dBopeartion.select(sql);
+            con = ConPools.getInstance().getConnection();
+            pst = con.prepareStatement(sql);
+            rs = pst.executeQuery();
             result = PackagetoJson.indexPackage(rs);
-            dBopeartion.close();
+            con.close();
         }catch (Exception e) { System.out.println("IndexLoadingServlet"+e); }
 
         response.setContentType("application/json; charset=utf-8");
