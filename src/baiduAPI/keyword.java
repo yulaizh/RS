@@ -15,7 +15,7 @@ public class keyword {
 
         ArrayList<String> index = null;
         ArrayList<String> content = null;
-        String SQl = "select id,title,description from article";
+        String SQl = "select id,title,description from article order by crawl_time desc limit 100";
         String container = null;
         BDdbop op = new BDdbop();
         Bean bean = null;
@@ -27,7 +27,7 @@ public class keyword {
         for (int i = 0; i < index.size();i++){
             container = getResults(url,content.get(i).toString());
 
-            String sql = "update article set tag = ? where id = '" + index.get(i)+"'";
+            String sql = "update article set keywords = ? where id = '" + index.get(i)+"'";
             op.update(container,sql);
         }
         op.close();

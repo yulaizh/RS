@@ -25,9 +25,8 @@ public class LogAndSignServlet extends HttpServlet {
             dBopeartion.Connection();
             id = dBopeartion.select(sql,"id");
             dBopeartion.close();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+        }catch (Exception e){ e.printStackTrace();}
+
         retu = id.equals(null)?false:true;
         if (retu){
             session.setAttribute("id",id);
@@ -62,9 +61,7 @@ public class LogAndSignServlet extends HttpServlet {
                 }
             }
             dBopeartion.close();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+        }catch (Exception e){ e.printStackTrace(); }
 
         response.setContentType("application/json; charset=utf-8");
         response.setCharacterEncoding("UTF-8");

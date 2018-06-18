@@ -35,9 +35,7 @@ public class LikeandDislikeServlet extends HttpServlet {
             }
 
             dBopeartion.close();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+        }catch (Exception e){ e.printStackTrace(); }
 
     }
 
@@ -64,8 +62,6 @@ public class LikeandDislikeServlet extends HttpServlet {
             }
 
             dBopeartion.close();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+        }catch (Exception e){ e.printStackTrace(); }
     }
 }

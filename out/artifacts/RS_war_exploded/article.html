@@ -28,6 +28,7 @@ css在同一目录下
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/article.css">
     <script type="text/javascript" src="js_lib/jquery-3.3.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
@@ -108,63 +109,6 @@ css在同一目录下
                             </div>
                         </div>
 
-                        <div class="comMain">
-                            <div class="comLeft">
-                                <img src="pic/touxiang.jpg" alt="">
-                            </div>
-                            <div class="comRight">
-                                <div class="comUserName">
-                                    <span>用户名</span>
-                                </div>
-                                <div class="comContent">
-                                    <p>
-                                    这是评论这是评论这是评论这是评论这是评论
-                                    这是评论这是评论这是评论这是评论这是评论
-                                    这是评论这是评论这是评论这是评论这是评论
-                                    这是评论。
-                                    </p>
-                                </div> 
-                            </div>
-                        </div>
-
-                        <div class="comMain">
-                            <div class="comLeft">
-                                <img src="pic/touxiang.jpg" alt="">
-                            </div>
-                            <div class="comRight">
-                                <div class="comUserName">
-                                    <span>用户名</span>
-                                </div>
-                                <div class="comContent">
-                                    <p>
-                                    这是评论这是评论这是评论这是评论这是评论
-                                    这是评论这是评论这是评论这是评论这是评论
-                                    这是评论这是评论这是评论这是评论这是评论
-                                    这是评论。
-                                    </p>
-                                </div> 
-                            </div>
-                        </div>
-
-                        <div class="comMain">
-                            <div class="comLeft">
-                                <img src="pic/touxiang.jpg" alt="">
-                            </div>
-                            <div class="comRight">
-                                <div class="comUserName">
-                                    <span>用户名</span>
-                                </div>
-                                <div class="comContent">
-                                    <p>
-                                    这是评论这是评论这是评论这是评论这是评论
-                                    这是评论这是评论这是评论这是评论这是评论
-                                    这是评论这是评论这是评论这是评论这是评论
-                                    这是评论。
-                                    </p>
-                                </div> 
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -176,59 +120,17 @@ css在同一目录下
                 <div class="hot_news">
                     <div class="blue_wire"></div>
                     <h3 style="height: 35px">&nbsp;24小时热门新闻</h3>
-                    <ul class="hot_ul">
-                        <li>
-                            <a href="#">
-                                <div class="hot_img_box">
-                                    <img class="hot_img" src="pic/1.jpg">
-                                </div>
-                                <div class="hot_title_box">
-                                    <p class="hot_title">王嘉尔官本位表格范围分为非仍无法合并个人版</p>
-                                </div>
-                            </a>
-                        </li>
-                        <hr/>
-                        <li>
-                            <a href="#">
-                                <div class="hot_img_box">
-                                    <img class="hot_img" src="pic/1.jpg">
-                                </div>
-                                <div class="hot_title_box">
-                                    <p class="hot_title">王嘉尔官本位表格合并个人版</p>
-                                </div>
-                            </a>
-                        </li>
-                        <hr/>
-                        <li>
-                            <a href="#">
-                                <div class="hot_img_box">
-                                    <img class="hot_img" src="pic/1.jpg">
-                                </div>
-                                <div class="hot_title_box">
-                                    <p class="hot_title">王嘉尔官本位表格合并个人版</p>
-                                </div>
-                            </a>
-                        </li>
-                        <hr/>
-                        <li>
-                            <a href="#">
-                                <div class="hot_img_box">
-                                    <img class="hot_img" src="pic/1.jpg">
-                                </div>
-                                <div class="hot_title_box">
-                                    <p class="hot_title">王嘉尔官本位表格合并个人版</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                    <div id="vue">
+                        <ul class="hot_ul">
+                            <vue-li v-for="project in projects"  :title="project.title" :href="project.href" :image="project.image"></vue-li>
+                        </ul>
+                    </div>
                 </div>
-
-
             </div>
         </div>
         
     </div>
 </body>
 <script type="text/javascript" src="js/article.js"></script>
-
+<script src="Vue/Vue.js"></script>
 </html>

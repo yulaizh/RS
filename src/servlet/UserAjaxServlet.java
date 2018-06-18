@@ -22,18 +22,11 @@ public class UserAjaxServlet extends HttpServlet {
         String json = null;
         try{
             dBopeartion.Connection();
-
-
             json = "{\"name\":\""+name +"\",\"url\":\""+ dBopeartion.select(sql,"pic_url") +"\"}";
-
-
             dBopeartion.close();
         }catch (Exception e){
             e.printStackTrace();
         }
-
-        System.out.println(json);
-
         response.setContentType("application/json; charset=utf-8");
         response.setCharacterEncoding("UTF-8");
         response.getWriter().write(json);

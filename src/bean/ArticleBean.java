@@ -1,5 +1,7 @@
 package bean;
 
+import java.util.List;
+
 public class ArticleBean {
     String id = null;
     String title = null;
@@ -12,6 +14,11 @@ public class ArticleBean {
     int dislikes = 0;
     long crawl_time = 0;
     int likeornot = 1;
+    List<CommentBean> list;
+
+    public List<CommentBean> getList() { return list; }
+
+    public void setList(List<CommentBean> list) { this.list = list; }
 
     public int getLikeornot() { return likeornot; }
 

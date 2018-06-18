@@ -15,36 +15,39 @@ import java.sql.ResultSet;
 @WebServlet(name = "WaterfallServlet",urlPatterns = "/WaterfallServlet")
 public class WaterfallServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int param = Integer.parseInt(request.getParameter("param"));
-        int num = Integer.parseInt(request.getParameter("num"));
-        long counter = Long.parseLong(request.getParameter("counter"));
+        String param = request.getParameter("param");
+        String current_id = request.getParameter("counter");
         String sql = null;
-        ResultSet rs = null;
         String result = null;
         DBopeartion dBopeartion = new DBopeartion();
-        PackagetoJson packagetoJson = new PackagetoJson();
-        if (param == 0){
-            sql = "select id,title,image_list,crawl_time,tag from article where crawl_time < '"+counter+"' order by crawl_time desc limit "+num;
-        }else if (param == 1){
-            sql = "select id,title,image_list,crawl_time,user_add_flag from article where crawl_time < '"+counter+"' order by crawl_time desc limit "+num;
-        }else if (param > 1){
-            param = param - 2;
-            sql = "select id,title,image_list,crawl_time,user_add_flag from article where user_add_flag = '"+param+"' and crawl_time < '"+counter+"' order by crawl_time desc limit "+num;
+        switch (param){
+            case "推荐": sql = "select * from article where id < '"+ current_id + "' order by id desc limit 4";break;   //推荐待做
+            case "综合": sql = "select * from article where id < '"+ current_id + "' and tag not in ('社会','娱乐','财经','科技','文化','教育','时事','国际','旅游','体育','汽车','时尚','') order by id desc limit 4";break;
+            case "社会": sql = "select * from article where id < '"+ current_id + "' and tag = '社会' order by id desc limit 4 ";break;
+            case "娱乐": sql = "select * from article where id < '"+ current_id + "' and tag = '娱乐' order by id desc limit 4 ";break;
+            case "财经": sql = "select * from article where id < '"+ current_id + "' and tag = '财经' order by id desc limit 4 ";break;
+            case "科技": sql = "select * from article where id < '"+ current_id + "' and tag = '科技' order by id desc limit 4 ";break;
+            case "文化": sql = "select * from article where id < '"+ current_id + "' and tag = '文化' order by id desc limit 4 ";break;
+            case "教育": sql = "select * from article where id < '"+ current_id + "' and tag = '教育' order by id desc limit 4 ";break;
+            case "时事": sql = "select * from article where id < '"+ current_id + "' and tag = '时事' order by id desc limit 4 ";break;
+            case "国际": sql = "select * from article where id < '"+ current_id + "' and tag = '国际' order by id desc limit 4 ";break;
+            case "旅游": sql = "select * from article where id < '"+ current_id + "' and tag = '旅游' order by id desc limit 4 ";break;
+            case "体育": sql = "select * from article where id < '"+ current_id + "' and tag = '体育' order by id desc limit 4 ";break;
+            case "汽车": sql = "select * from article where id < '"+ current_id + "' and tag = '汽车' order by id desc limit 4 ";break;
+            case "时尚": sql = "select * from article where id < '"+ current_id + "' and tag = '时尚' order by id desc limit 4 ";break;
+            case "其他": sql = "select * from article where id < '"+ current_id + "' and tag = '' ";
         }
-
         try {
             dBopeartion.Connection();
-            rs =  dBopeartion.select(sql);
-            result = packagetoJson.indexPackage(rs);
+            ResultSet rs =  dBopeartion.select(sql);
+            result = PackagetoJson.indexPackage(rs);
             dBopeartion.close();
         }catch (Exception e) {
-            System.out.println("2"+e);
+            System.out.println("WaterfallServlet"+e);
         }
-
         response.setContentType("application/json; charset=utf-8");
         response.setCharacterEncoding("UTF-8");
         response.getWriter().write(result);
-
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

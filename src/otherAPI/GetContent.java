@@ -26,7 +26,7 @@ public class GetContent {
     static String password = "123456";
     static Connection con = null;
     static PreparedStatement pst = null;
-    static Statement st = null;
+//    static Statement st = null;
     static ResultSet rs = null;
 
 
@@ -42,7 +42,7 @@ public class GetContent {
         isr.close();
         br.close();
         pst.close();
-        st.close();
+//        st.close();
         rs.close();
         con.close();
     }
@@ -53,7 +53,7 @@ public class GetContent {
 
     }
     public static void getContent() throws IOException, SQLException {
-        String sql = "select id from article where id > 1";
+        String sql = "select id from article";
         String id = null;
         pst = con.prepareStatement(sql);
         rs= pst.executeQuery();
@@ -76,9 +76,13 @@ public class GetContent {
             sb.setLength(0);
             response = dataJson.getJSONObject("data");
             String ct = response.getString("content");
+
+            ct = ct.replaceAll("\n","<br>");
             System.out.println(ct);
-            String sqll ="update article set content ='"+ct+ "' where id = '"+ id +"'";
+            String sqll ="update article set content = ? where id = ?";
             pst = con.prepareStatement(sqll);
+            pst.setString(1,ct);
+            pst.setString(2,id);
             try{
                 pst.executeUpdate();
             }catch (Exception e){

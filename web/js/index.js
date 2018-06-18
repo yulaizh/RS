@@ -33,7 +33,7 @@ $(document).ready(function() {
     $.ajax({
         type: "POST",
         url: "IndexLoadingServlet",
-        data: { param: 0 },
+        data: { param:'推荐' },
         dataType: "json",
         success: function (result) {
             $(".content_ul").html("");
@@ -43,22 +43,24 @@ $(document).ready(function() {
                     '<li>\n' +
                     '  <div class="box">\n' +
                     '      <div class="pic_box">\n' +
-                    '          <img class="pic" src='+arr[0]+'>\n' +
+                    "          <a href=\"article.html?id="+ item.id + "\">" +
+                    '              <img class="pic" src='+arr[0]+'>' +
+                    '          </a>'+
                     '      </div>\n' +
                     '      <div class="content_box">\n' +
                     '          <div class="title_box">\n' +
-                    "             <a class='title' href=\"article.html?id="+item.id+"\">"+item.title+"</a>\n" +
+                    "             <a class='title' target=\"_blank\" href=\"article.html?id="+item.id+"\">"+item.title+"</a>\n" +
                     '          </div>\n' +
                     '          <div class="little_things_box">\n' +
-                    '              <a class="little_tag">'+item.tag+'</a>\n' +
-                    '                 <span class="little_font_of_time">'+item.crawl_time+'</span>\n' +
+                    '              <span class="little_tag">'+ item.tag +'</span>\n' +
+                    '              <span class="little_font">'+ item.origin +'</span>'+
                     '          </div>\n' +
                     '       </div>\n' +
                     '   </div>\n' +
                     '</li>');
             });
         },
-        error: function (jqXHR) { alert("发生错误：" + jqXHR.status);},
+        error: function (jqXHR) { console.log("发生错误：" + jqXHR.status);},
     })
 })
 
@@ -70,12 +72,15 @@ var currentIndex = 0;
 $(document).ready(function() {
     $('.left_list').each(function (index) {
         $(this).on('click', function () {
+            $('.left_ul > li > a').removeClass("selected");
+            $('.left_ul > li > a').eq(index).addClass("selected")
+
             currentIndex = index;
             $.ajax({
                 type: "POST",
                 url: "IndexLoadingServlet",
                 data: {
-                    param: index
+                    param: $('.left_list > span').eq(index).text()
                 },
                 dataType: "json",
                 success: function (result) {
@@ -86,22 +91,24 @@ $(document).ready(function() {
                             '<li>\n' +
                             '  <div class="box">\n' +
                             '      <div class="pic_box">\n' +
-                            '          <img class="pic" src='+arr[0]+'>\n' +
+                            "          <a href=\"article.html?id="+ item.id + "\">" +
+                            '              <img class="pic" src='+arr[0]+'>' +
+                            '          </a>'+
                             '      </div>\n' +
                             '      <div class="content_box">\n' +
                             '          <div class="title_box">\n' +
-                            "             <a class='title' href=\"article.html?id=111"+item.id+"\">"+item.title+"</a>\n" +
+                            "             <a class='title' target=\"_blank\" href=\"article.html?id="+item.id+"\">"+item.title+"</a>\n" +
                             '          </div>\n' +
                             '          <div class="little_things_box">\n' +
-                            '              <a class="little_tag">flagname</a>\n' +
-                            '                 <span class="little_font_of_time">'+ item.crawl_time +'</span>\n' +
+                            '              <span class="little_tag">'+ item.tag +'</span>\n' +
+                            '              <span class="little_font">'+ item.origin +'</span>'+
                             '          </div>\n' +
                             '       </div>\n' +
                             '   </div>\n' +
                             '</li>');
                     });
                 },
-                error: function (jqXHR) {alert("发生错误：" + jqXHR.status);},
+                error: function (jqXHR) {console.log("发生错误：" + jqXHR.status);},
             })
         })
     })
@@ -131,17 +138,15 @@ $( window ).on( "load", function(){
 });
 
 //瀑布流刷新
-var currentTime = 0;
+
 function waterfall(){
-    currentTime = Number($('.content_ul > li:last-child span').text());
-    console.log("currentTime"+currentTime);
+    currentId = $('.content_ul > li:last-child .title').attr("href").split('=')[1]; //
     $.ajax({
         type: "POST",
         url: "WaterfallServlet",
         data: {
-            param : currentIndex,
-            num : 4,
-            counter: currentTime
+            param : $('.left_list > span').eq(currentIndex).text(),
+            counter: currentId
         },
         dataType: "json",
         success: function (result) {
@@ -152,15 +157,17 @@ function waterfall(){
                     '<li>\n' +
                     '  <div class="box">\n' +
                     '      <div class="pic_box">\n' +
-                    '          <img class="pic" src='+arr[0]+'>\n' +
+                    "          <a href=\"article.html?id="+ item.id + "\">" +
+                    '              <img class="pic" src='+arr[0]+'>' +
+                    '          </a>'+
                     '      </div>\n' +
                     '      <div class="content_box">\n' +
                     '          <div class="title_box">\n' +
-                    "             <a class='title' href=\"article.html?id="+item.id+"\">"+item.title+"</a>\n" +
+                    "             <a class='title' target=\"_blank\" href=\"article.html?id="+item.id+"\">"+item.title+"</a>\n" +
                     '          </div>\n' +
                     '          <div class="little_things_box">\n' +
-                    '              <a class="little_tag">flagname</a>\n' +
-                    '                 <span class="little_font_of_time">'+ item.crawl_time +'</span>\n' +
+                    '              <span class="little_tag">'+ item.tag +'</span>\n' +
+                    '              <span class="little_font">'+ item.origin +'</span>'+
                     '          </div>\n' +
                     '       </div>\n' +
                     '   </div>\n' +
@@ -168,7 +175,7 @@ function waterfall(){
             });
         },
         error: function (jqXHR) {
-            alert("发生错误：" + jqXHR.status);
+            console.log("发生错误：" + jqXHR.status);
         },
     })
 }

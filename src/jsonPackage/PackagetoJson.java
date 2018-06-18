@@ -11,7 +11,7 @@ import java.util.List;
 public class PackagetoJson {
 
 
-    public String indexPackage(ResultSet rs) throws SQLException {
+    public static String indexPackage(ResultSet rs) throws SQLException {
         List<ArticleListBean> list = new ArrayList<>();
 
         while (rs.next()){
@@ -24,6 +24,7 @@ public class PackagetoJson {
             articleBean.setImage_list(rs.getString("image_list"));
             articleBean.setCrawl_time(Long.parseLong(rs.getString("crawl_time")));
             articleBean.setTag(rs.getString("tag"));
+            articleBean.setOrigin(rs.getString("origin"));
             list.add(articleBean);
         }
 
@@ -31,15 +32,4 @@ public class PackagetoJson {
         return result.toString();
     }
 
-    public String ArticlePackage(ResultSet rs)throws SQLException{
-        List<ArticleListBean> list = new ArrayList<>();
-
-        while (rs.next()){
-
-
-
-
-        }
-        return null;
-    }
 }

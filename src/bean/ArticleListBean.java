@@ -1,6 +1,7 @@
 package bean;
 
 public class ArticleListBean {
+
     String id = null;
     String title = null;
     String content = null;
@@ -8,10 +9,6 @@ public class ArticleListBean {
     String keywords = null;
     String tag = null;
     String description = null;
-    long reads = 0;
-    long likes = 0;
-    long dislikes = 0;
-
     String image_list = null;
     long crawl_time = 0;
 
@@ -69,30 +66,6 @@ public class ArticleListBean {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public long getReads() {
-        return reads;
-    }
-
-    public void setReads(long reads) {
-        this.reads = reads;
-    }
-
-    public long getLikes() {
-        return likes;
-    }
-
-    public void setLikes(long likes) {
-        this.likes = likes;
-    }
-
-    public long getDislikes() {
-        return dislikes;
-    }
-
-    public void setDislikes(long dislikes) {
-        this.dislikes = dislikes;
     }
 
     public String getImage_list() {

@@ -67,7 +67,7 @@ public class ReadURL {//6.10测试过 可直接用，接口未关闭。
         //	System.out.println(e);
         JSONArray jsonArray = response.getJSONArray("list");
         JSONObject littledataJson = null;
-        String f,g,h,i,j,k,l,m = null;
+        String f,g,h,i,j,k,l = null;
         for(int z=0;z<jsonArray.size();z++) {
             littledataJson = jsonArray.getJSONObject(z);
             a = littledataJson.getString("id");
@@ -80,13 +80,12 @@ public class ReadURL {//6.10测试过 可直接用，接口未关闭。
             h = "0";
             i = "0";
             j = "0";
-            k = littledataJson.getString("source_url");
-            l = littledataJson.getString("image_list");
-            m = littledataJson.getString("crawl_time");
+            k = littledataJson.getString("image_list");
+            l = littledataJson.getString("crawl_time");
 
 
 
-            String SQL = "insert into article (id,title,origin,content,tag,keywords,description,readss,likes,dislikes,source_url,image_list,crawl_time) values (?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            String SQL = "insert into article (id,title,origin,content,tag,keywords,description,readss,likes,dislikes,image_list,crawl_time) values (?,?,?,?,?,?,?,?,?,?,?,?)";
             pst = con.prepareStatement(SQL);
             pst.setString(1, a);
             pst.setString(2, b);
@@ -99,9 +98,12 @@ public class ReadURL {//6.10测试过 可直接用，接口未关闭。
             pst.setString(9, i);
             pst.setString(10, j);
             pst.setString(11, k);
-            pst.setString(12, l);
-            pst.setString(13,m);
-            pst.execute();
+            pst.setString(12,l);
+            try {
+                pst.execute();
+            }catch (Exception e1){
+                e1.printStackTrace();
+            }
 
         }
         System.out.println("存储完毕");
@@ -110,10 +112,10 @@ public class ReadURL {//6.10测试过 可直接用，接口未关闭。
 
     public static void main(String[] args) throws Exception {
         connection();
-        for(int i=1;i<11;i++)
-        {	Str = URL2String(i);
+//        for(int i=1;i<11;i++) {
+            Str = URL2String(1);
             read_json(Str);
-        }
+//        }
         close();
     }
 }
