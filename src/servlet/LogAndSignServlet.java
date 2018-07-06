@@ -32,7 +32,6 @@ public class LogAndSignServlet extends HttpServlet {
 
         try {
             con = ConPools.getInstance().getConnection();
-
             pst = con.prepareStatement(sql);
             pst.setString(1,account);
             pst.setString(2,password);
@@ -85,7 +84,6 @@ public class LogAndSignServlet extends HttpServlet {
                 retu = true;
             }
 
-
             if (retu){
                 pst = con.prepareStatement(insertSql);
                 pst.setString(1,account);
@@ -93,6 +91,8 @@ public class LogAndSignServlet extends HttpServlet {
                 pst.executeUpdate();
 
                 pst = con.prepareStatement(sql);
+                pst.setString(1,account);
+                pst.setString(2,password);
                 rs = pst.executeQuery();
                 if (rs.next()){
                     id = rs.getString("id");
@@ -101,12 +101,15 @@ public class LogAndSignServlet extends HttpServlet {
                 }
 
                 if (!id.equals(null)){
-                    String insertSql_info = "insert into user_info (id) values (?)";
+                    String insertSql_info = "insert into user_info (id,sex,birth) values (?,?,?)";
                     pst = con.prepareStatement(insertSql_info);
                     pst.setString(1,id);
+                    pst.setString(2,"1");
+                    pst.setString(3,"2000/01/01");
                     pst.executeUpdate();
                 }
             }
+
             con.commit();
             con.close();
         }catch (Exception e){

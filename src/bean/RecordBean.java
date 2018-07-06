@@ -1,5 +1,7 @@
 package bean;
-
+/**
+ *用来可视化浏览记录
+ * */
 public class RecordBean {
     int synthesize = 0;
     int society = 0;

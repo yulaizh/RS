@@ -1,5 +1,7 @@
 package bean;
-
+/**
+ * 用户个人信息
+ * */
 public class UserBean {
     String sexIndex = null;
     String year = null;

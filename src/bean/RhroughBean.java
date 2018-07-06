@@ -1,5 +1,7 @@
 package bean;
-
+/**
+ * 用户行为
+ * */
 public class RhroughBean {
     long time = 0;
     String title ;

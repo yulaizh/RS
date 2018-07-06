@@ -1,5 +1,7 @@
 package bean;
-
+/**
+ * 没用呢
+ * */
 public class LoadBean {
 
     long[] currentTimeArray = new long[14];

@@ -89,6 +89,10 @@ public class GetRecordServlet extends HttpServlet {
         response.getWriter().write(jsonObject.toString());
     }
 
+
+    /**
+     * 加载浏览记录
+     * */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String user_id = (String) request.getSession().getAttribute("id");
         String sql = "select read_time,title,likeornot,record.tag from record,article where article_id = article.id and user_id = ?";
@@ -110,6 +114,8 @@ public class GetRecordServlet extends HttpServlet {
                 rhroughBean.setTag(rs.getString(4));
                 list.add(rhroughBean);
             }
+
+            con.close();
         }catch (Exception e){e.printStackTrace();}
 
         jsonArray = JSONArray.fromObject(list);

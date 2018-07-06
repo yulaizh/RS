@@ -1,5 +1,7 @@
 package bean;
-
+/**
+ * 包装评论信息
+ * */
 public class CommentBean {
     String comment_id = null;
     String user_id = null;

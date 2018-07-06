@@ -1,5 +1,7 @@
 package bean;
-
+/**
+ * 文章基本信息
+ * */
 public class ArticleListBean {
 
     String id = null;

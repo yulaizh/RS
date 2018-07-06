@@ -1,7 +1,9 @@
 package bean;
 
 import java.util.List;
-
+/**
+ * 文章所有信息
+ * */
 public class ArticleBean {
     String id = null;
     String title = null;

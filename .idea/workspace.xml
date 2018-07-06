@@ -7,67 +7,100 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3c4a83e-36d2-4ef3-a6d4-dd1bb269d654" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/RecordBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/RhroughBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/UserBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/loadServlet/GetRecordServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/iframe/css/content1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/iframe/css/content4.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/iframe/js/content1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/iframe/js/content2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pic/lunbotu1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pic/lunbotu2.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/Vue/Vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/Vue/Vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/Article_LoadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/Article_LoadServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/baiduAPI/AuthService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/baiduAPI/BDdbop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/baiduAPI/Bean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/baiduAPI/HttpUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/baiduAPI/keyword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/baiduAPI/topic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/bean/ArticleBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/bean/ArticleBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/bean/ArticleListBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/bean/ArticleListBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/bean/CommentBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/bean/CommentBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/bean/HotNewsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/bean/HotNewsBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/bean/LoadBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/bean/LoadBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/bean/RecordBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/bean/RecordBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/bean/RhroughBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/bean/RhroughBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/bean/UserBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/bean/UserBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/db/ConPools$ConHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/db/ConPools$ConHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/db/ConPools.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/db/ConPools.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/jsonPackage/PackagetoJson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/otherAPI/GetContent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/otherAPI/GetTitle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/otherAPI/Getflag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/otherAPI/ReadURL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/otherAPI/weather.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/Article_LoadServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/Article_commentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/Article_commentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/GetRecordServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/HotNewsServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/IndexLoadingServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/LikeandDislikeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/LikeandDislikeServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/LogAndSignServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/LogAndSignServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/SignAsynchronousServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/SignAsynchronousServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/UserAjaxServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/User_infoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/User_infoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/ViewpagerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/ViewpagerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/WEB-INF/classes/servlet/WaterfallServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/article.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/iframe/content1.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/iframe/content1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/iframe/content2.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/iframe/content2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/iframe/content4.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/iframe/content4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/js/pcs.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/js/pcs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/self.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RS_war_exploded/self.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/Article_LoadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/servlet/Article_LoadServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/baiduAPI/AuthService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/baiduAPI/BDdbop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/baiduAPI/Bean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/baiduAPI/HttpUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/baiduAPI/keyword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/baiduAPI/topic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/bean/ArticleBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/bean/ArticleBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/bean/ArticleListBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/bean/ArticleListBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/bean/CommentBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/bean/CommentBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/bean/HotNewsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/bean/HotNewsBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/bean/LoadBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/bean/LoadBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/bean/RecordBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/bean/RecordBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/bean/RhroughBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/bean/RhroughBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/bean/UserBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/bean/UserBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/db/ConPools$ConHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/db/ConPools$ConHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/db/ConPools.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/db/ConPools.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/jsonPackage/PackagetoJson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/otherAPI/GetContent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/otherAPI/GetTitle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/otherAPI/Getflag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/otherAPI/ReadURL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/otherAPI/weather.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/Article_LoadServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/Article_commentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/servlet/Article_commentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/GetRecordServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/HotNewsServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/IndexLoadingServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/LikeandDislikeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/servlet/LikeandDislikeServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/LogAndSignServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/servlet/LogAndSignServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/SignAsynchronousServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/servlet/SignAsynchronousServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/UserAjaxServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/User_infoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/servlet/User_infoServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baiduAPI/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baiduAPI/Labeling/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baiduAPI/BDdbop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baiduAPI/Labeling/BDdbop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baiduAPI/Bean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baiduAPI/Labeling/Bean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baiduAPI/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baiduAPI/Labeling/HttpUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baiduAPI/keyword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baiduAPI/Labeling/keyword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baiduAPI/topic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/ConPools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/ConPools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jsonPackage/PackagetoJson.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/otherAPI/GetContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baiduAPI/getinfo/GetContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/otherAPI/GetTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baiduAPI/getinfo/GetTitle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/otherAPI/Getflag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baiduAPI/getinfo/Getflag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/otherAPI/ReadURL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baiduAPI/getinfo/ReadURL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/otherAPI/weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baiduAPI/getinfo/weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/Article_LoadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/loadServlet/Article_LoadServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/Article_commentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/Article_commentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/HotNewsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/loadServlet/HotNewsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/IndexLoadingServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/loadServlet/IndexLoadingServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/LikeandDislikeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/LikeandDislikeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/ViewpagerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RS/servlet/ViewpagerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RS/servlet/WaterfallServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baiduAPI/Labeling/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/someAPI/Labeling/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baiduAPI/Labeling/BDdbop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/someAPI/Labeling/BDdbop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baiduAPI/Labeling/Bean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/someAPI/Labeling/Bean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baiduAPI/Labeling/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/someAPI/Labeling/HttpUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baiduAPI/Labeling/keyword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/someAPI/Labeling/keyword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baiduAPI/Labeling/topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/someAPI/Labeling/topic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baiduAPI/getinfo/GetContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/someAPI/getinfo/GetContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baiduAPI/getinfo/GetTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/someAPI/getinfo/GetTitle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baiduAPI/getinfo/Getflag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/someAPI/getinfo/Getflag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baiduAPI/getinfo/ReadURL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/someAPI/getinfo/ReadURL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baiduAPI/getinfo/weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/someAPI/getinfo/weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/ArticleBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/ArticleBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/ArticleListBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/ArticleListBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/CommentBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/CommentBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/HotNewsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/HotNewsBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/LoadBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/LoadBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/RecordBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/RecordBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/RhroughBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/RhroughBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/UserBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/servlet/LogAndSignServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/LogAndSignServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/SignAsynchronousServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/SignAsynchronousServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/UserAjaxServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/loadServlet/UserAjaxServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/User_infoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/User_infoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/ViewpagerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/ViewpagerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/WaterfallServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/loadServlet/WaterfallServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Vue/Vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/Vue/Vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/iframe/content1.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/iframe/content1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/iframe/content2.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/iframe/content2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/iframe/content4.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/iframe/content4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/pcs.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/pcs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/self.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/self.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/loadServlet/GetRecordServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/loadServlet/GetRecordServlet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,32 +134,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Article_LoadServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/loadServlet/Article_LoadServlet.java">
+      <file leaf-file-name="show.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/show.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1412">
-              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetRecordServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/loadServlet/GetRecordServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-275">
-              <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="topic.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/baiduAPI/Labeling/topic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="193">
+              <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -158,23 +170,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/otherAPI/GetContent.java" />
-        <option value="$PROJECT_DIR$/js/component.js" />
-        <option value="$PROJECT_DIR$/vue/index_Vue.html" />
-        <option value="$PROJECT_DIR$/src/bean/HotNewsBean.java" />
-        <option value="$PROJECT_DIR$/web/Vue.js" />
-        <option value="$PROJECT_DIR$/src/jsonPackage/PackagetoJson.java" />
         <option value="$PROJECT_DIR$/src/db/Conpools.java" />
         <option value="$PROJECT_DIR$/src/db/DBopeartion.java" />
         <option value="$PROJECT_DIR$/web/css/article.css" />
         <option value="$PROJECT_DIR$/web/js/article.js" />
         <option value="$PROJECT_DIR$/web/iframe/content3.html" />
         <option value="$PROJECT_DIR$/src/servlet/SetUser_infoServlet.java" />
-        <option value="$PROJECT_DIR$/src/bean/UserBean.java" />
         <option value="$PROJECT_DIR$/web/js/pcs.js" />
-        <option value="$PROJECT_DIR$/src/bean/RecordBean.java" />
         <option value="$PROJECT_DIR$/web/self.html" />
-        <option value="$PROJECT_DIR$/src/bean/RhroughBean.java" />
         <option value="$PROJECT_DIR$/web/Vue/Vue.js" />
         <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/css/index.css" />
@@ -205,10 +208,19 @@
         <option value="$PROJECT_DIR$/web/iframe/css/content4.css" />
         <option value="$PROJECT_DIR$/src/servlet/LikeandDislikeServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/loadServlet/Article_LoadServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/loadServlet/GetRecordServlet.java" />
+        <option value="$PROJECT_DIR$/src/baiduAPI/Labeling/topic.java" />
+        <option value="$PROJECT_DIR$/src/someAPI/Labeling/topic.java" />
+        <option value="$PROJECT_DIR$/src/bean/CommentBean.java" />
+        <option value="$PROJECT_DIR$/src/bean/ArticleListBean.java" />
+        <option value="$PROJECT_DIR$/src/bean/ArticleBean.java" />
+        <option value="$PROJECT_DIR$/src/bean/LoadBean.java" />
+        <option value="$PROJECT_DIR$/src/bean/RecordBean.java" />
+        <option value="$PROJECT_DIR$/src/bean/UserBean.java" />
+        <option value="$PROJECT_DIR$/src/bean/RhroughBean.java" />
+        <option value="$PROJECT_DIR$/src/bean/HotNewsBean.java" />
         <option value="$PROJECT_DIR$/src/servlet/LogAndSignServlet.java" />
         <option value="$PROJECT_DIR$/src/db/ConPools.java" />
-        <option value="$PROJECT_DIR$/src/baiduAPI/Labeling/topic.java" />
+        <option value="$PROJECT_DIR$/src/servlet/loadServlet/GetRecordServlet.java" />
       </list>
     </option>
   </component>
@@ -242,6 +254,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -264,46 +278,12 @@
               <item name="RS" type="b2602c69:ProjectViewProjectNode" />
               <item name="RS" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="baiduAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="someAPI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RS" type="b2602c69:ProjectViewProjectNode" />
               <item name="RS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="baiduAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="getinfo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="baiduAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="Labeling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-              <item name="loadServlet" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RS" type="b2602c69:ProjectViewProjectNode" />
@@ -313,8 +293,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -355,12 +333,12 @@
   </component>
   <component name="RunManager" selected="Tomcat Server.login.html">
     <configuration name="GetContent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baiduAPI.getinfo.GetContent" />
+      <option name="MAIN_CLASS_NAME" value="someAPI.getinfo.GetContent" />
       <module name="RS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baiduAPI.getinfo.*" />
+          <option name="PATTERN" value="someAPI.getinfo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -369,23 +347,23 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration name="keyword" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baiduAPI.Labeling.keyword" />
+      <option name="MAIN_CLASS_NAME" value="someAPI.Labeling.keyword" />
       <module name="RS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baiduAPI.Labeling.*" />
+          <option name="PATTERN" value="someAPI.Labeling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
     <configuration name="topic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baiduAPI.Labeling.topic" />
+      <option name="MAIN_CLASS_NAME" value="someAPI.Labeling.topic" />
       <module name="RS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baiduAPI.Labeling.*" />
+          <option name="PATTERN" value="someAPI.Labeling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -663,12 +641,13 @@
       <workItem from="1530332310377" duration="1140000" />
       <workItem from="1530346417515" duration="1880000" />
       <workItem from="1530402390706" duration="9177000" />
-      <workItem from="1530837740086" duration="5616000" />
+      <workItem from="1530837740086" duration="5675000" />
+      <workItem from="1530843976503" duration="3106000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190388000" />
+    <option name="totallyTimeSpent" value="193553000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -680,34 +659,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="2" weight="0.32916668" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info id="Image Layers" order="5" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32916668" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.46666667" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.15555556" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.3297568" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" x="401" y="562" width="982" height="152" id="Run" order="3" sideWeight="0.49928468" weight="0.28076923" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32916668" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9230769" visible="true" weight="0.20958512" />
-      <window_info id="Web" order="6" sideWeight="0.07692308" side_tool="true" visible="true" weight="0.20958512" />
       <window_info anchor="right" id="Database" order="5" weight="0.3297568" />
       <window_info id="Structure" order="1" sideWeight="0.094444446" side_tool="true" weight="0.22532189" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info id="Favorites" order="4" sideWeight="0.13867188" side_tool="true" weight="0.22818312" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.32916668" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32916668" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info id="Image Layers" order="5" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32916668" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" x="401" y="562" width="982" height="152" id="Run" order="3" sideWeight="0.49928468" weight="0.28076923" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32916668" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9217949" visible="true" weight="0.21244635" />
+      <window_info id="Web" order="6" sideWeight="0.07820513" side_tool="true" visible="true" weight="0.21244635" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="4" sideWeight="0.13867188" side_tool="true" weight="0.22818312" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32916668" />
@@ -733,73 +712,10 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/bean/RhroughBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/net/HttpURLConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/RS/baiduAPI/HttpUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/RS/baiduAPI/BDdbop.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-194">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/RS/baiduAPI/AuthService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/RS/baiduAPI/keyword.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/RS/baiduAPI/topic.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pcs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="170" column="42" selection-start-line="170" selection-start-column="42" selection-end-line="170" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/Vue/Vue.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -828,7 +744,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/baiduAPI/Labeling/AuthService.java">
+    <entry file="file://$PROJECT_DIR$/src/someAPI/Labeling/AuthService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
@@ -838,7 +754,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/baiduAPI/Labeling/keyword.java">
+    <entry file="file://$PROJECT_DIR$/src/someAPI/Labeling/keyword.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -848,7 +764,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/baiduAPI/Labeling/BDdbop.java">
+    <entry file="file://$PROJECT_DIR$/src/someAPI/Labeling/BDdbop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -858,14 +774,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/baiduAPI/Labeling/Bean.java">
+    <entry file="file://$PROJECT_DIR$/src/someAPI/Labeling/Bean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/baiduAPI/Labeling/HttpUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/someAPI/Labeling/HttpUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
@@ -875,35 +791,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/baiduAPI/getinfo/GetContent.java">
+    <entry file="file://$PROJECT_DIR$/src/someAPI/getinfo/GetContent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/baiduAPI/getinfo/Getflag.java">
+    <entry file="file://$PROJECT_DIR$/src/someAPI/getinfo/Getflag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/baiduAPI/getinfo/GetTitle.java">
+    <entry file="file://$PROJECT_DIR$/src/someAPI/getinfo/GetTitle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/baiduAPI/getinfo/weather.java">
+    <entry file="file://$PROJECT_DIR$/src/someAPI/getinfo/weather.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/baiduAPI/getinfo/ReadURL.java">
+    <entry file="file://$PROJECT_DIR$/src/someAPI/getinfo/ReadURL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
@@ -924,13 +840,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsonPackage/PackagetoJson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="30" column="54" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="30" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jsonPackage/PackagetoJson.java" />
     <entry file="file://$PROJECT_DIR$/web/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -987,13 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/iframe/content3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/iframe/css/content4.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1001,48 +904,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/iframe/content4.html">
+    <entry file="file://$PROJECT_DIR$/src/someAPI/Labeling/topic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="39" lean-forward="true" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/loadServlet/HotNewsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="420">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/loadServlet/IndexLoadingServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/bean/CommentBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="30">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/loadServlet/UserAjaxServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/bean/ArticleListBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="40">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/loadServlet/WaterfallServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/bean/ArticleBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="60">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/LikeandDislikeServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/bean/RecordBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+        <state relative-caret-position="30">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bean/RhroughBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bean/UserBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bean/LoadBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bean/HotNewsBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/ConPools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="111" column="32" lean-forward="true" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
+          <folding>
+            <element signature="e#4105#4106#0" expanded="true" />
+            <element signature="e#4135#4136#0" expanded="true" />
+            <element signature="e#4180#4181#0" expanded="true" />
+            <element signature="e#4225#4226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/loadServlet/Article_LoadServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-127">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/loadServlet/HotNewsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1053,10 +1007,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/LogAndSignServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/servlet/User_infoServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        <state relative-caret-position="885">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
         </state>
       </provider>
     </entry>
@@ -1067,10 +1021,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/User_infoServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/servlet/LogAndSignServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="1440">
+          <caret line="107" column="47" selection-start-line="107" selection-start-column="47" selection-end-line="107" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/LikeandDislikeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1515">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
         </state>
       </provider>
     </entry>
@@ -1081,40 +1042,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/loadServlet/Article_LoadServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/servlet/loadServlet/WaterfallServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1412">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/ConPools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
-          <folding>
-            <element signature="e#4105#4106#0" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4180#4181#0" expanded="true" />
-            <element signature="e#4225#4226#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-371">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/loadServlet/GetRecordServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-275">
-          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+        <state relative-caret-position="1350">
+          <caret line="107" column="36" lean-forward="true" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/baiduAPI/Labeling/topic.java">
+    <entry file="file://$PROJECT_DIR$/src/servlet/loadServlet/UserAjaxServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/loadServlet/IndexLoadingServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-377">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/iframe/content3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/iframe/content4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="41" column="39" lean-forward="true" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
         </state>
       </provider>
     </entry>

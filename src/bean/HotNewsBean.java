@@ -1,5 +1,7 @@
 package bean;
-
+/**
+ *热门信息
+ **/
 public class HotNewsBean {
     String href = null;
     String title = null;
