@@ -1,4 +1,4 @@
-package baiduAPI;
+package baiduAPI.Labeling;
 
 import java.sql.*;
 import java.util.ArrayList;

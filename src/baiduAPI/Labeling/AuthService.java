@@ -1,4 +1,4 @@
-package baiduAPI;
+package baiduAPI.Labeling;
 
 import org.json.JSONObject;
 import java.io.BufferedReader;

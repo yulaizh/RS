@@ -1,4 +1,4 @@
-package baiduAPI;
+package baiduAPI.Labeling;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
@@ -7,10 +7,7 @@ import java.util.ArrayList;
 
 public class topic {
 
-
-
     public static void main(String[] args) throws Exception {
-
         String url = "https://aip.baidubce.com/rpc/2.0/nlp/v1/topic";
         ArrayList<String> index = null;
         ArrayList<String> content = null;
@@ -26,7 +23,6 @@ public class topic {
         for (int i = 0; i < index.size();i++){
             container = getResults(url,content.get(i).toString());
             String sql = "update article set tag = ? where id = '" + index.get(i)+"'";
-
             op.update(container,sql);
         }
         op.close();

@@ -40,9 +40,6 @@ public class ConPools{
         }
     }
 
-
-
-
     /*
      * 私有构造方法，
      * 保证该类只存在一个实例
@@ -58,8 +55,6 @@ public class ConPools{
         }
         return instance;
     }
-
-
 
     /*
      * 在获取连接时检查清理不需要的连接。
@@ -85,15 +80,11 @@ public class ConPools{
         }
     }
 
-
-
-
     private static void clearConnection()throws SQLException{
-        while(System.currentTimeMillis()-listConnections.getFirst().time>clearTime){
+        while(System.currentTimeMillis()-listConnections.getFirst().time > clearTime){
             listConnections.removeFirst().connection.close();
         }
     }
-
 
     /*
      * 事务处理器
@@ -129,11 +120,11 @@ public class ConPools{
 
     }
 
-    public static int conNumber(){
+    public static int connectionedNumber(){
         return counter;
     }
 
-    public static int conNuber2(){
+    public static int unconnectionNumber(){
         return listConnections.size();
     }
 

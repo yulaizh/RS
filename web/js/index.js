@@ -1,10 +1,10 @@
 
 //轮播图效果
+var a = 0;
 setInterval(function () {
-    var a = 0;
+
     $('.buttons>li').removeClass("checked");
     $('.buttons>li').eq(a).addClass("checked");
-
     a++;
     change_class(a);
     if (a >= 5){
@@ -14,33 +14,38 @@ setInterval(function () {
 
 $('.buttons > li').hover(
     function () {
-        var i = $(this).index();
-        change_class(i);
+        a = $(this).index();
+        change_class(a);
     },
     function () {
     });
 
 function change_class(i) {
+    console.log(11);
     $('.link>img').removeClass("image");
     $('.link>img').addClass("image_hidden");
     $('.link>img').eq(i).addClass("image");
     $('.link>img').eq(i).removeClass("image_hidden");
 }
 
-$(document).ready(function () {
-    $.ajax({
-        type:"post",
-        url:"",
-        dataType:"json",
-        success:function () {
-            
-        },
-        error:function (error) {
-            console.log("发生错误"+error);
-        }
-    })
-    
-})
+
+
+
+
+// $(document).ready(function () {
+//     $.ajax({
+//         type:"post",
+//         url:"",
+//         dataType:"json",
+//         success:function () {
+//
+//         },
+//         error:function (error) {
+//             console.log("发生错误"+error);
+//         }
+//     })
+//
+// })
 
 
 
@@ -93,6 +98,7 @@ $(document).ready(function() {
             $('.left_ul > li > a').eq(index).addClass("selected")
 
             currentIndex = index;
+
             $.ajax({
                 type: "POST",
                 url: "IndexLoadingServlet",

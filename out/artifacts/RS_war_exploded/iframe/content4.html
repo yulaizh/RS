@@ -99,73 +99,14 @@
             <table>
                 <thead>
                     <tr>
-                        <th class="title1">时间</th>
+                        <th class="title">时间</th>
                         <th class="title">主题</th>
                         <th class="title">评论</th>
                         <th class="title">点赞</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>时间</td>
-                        <td>主题</td>
-                        <td>评论</td>
-                        <td>点赞</td>
-                    </tr>
-                    <tr>
-                        <td>时间</td>
-                        <td>主题</td>
-                        <td>评论</td>
-                        <td>点赞</td>
-                    </tr>
-                    <tr>
-                        <td>时间</td>
-                        <td>主题</td>
-                        <td>评论</td>
-                        <td>点赞</td>
-                    </tr>
-                    <tr>
-                        <td>时间</td>
-                        <td>主题</td>
-                        <td>评论</td>
-                        <td>点赞</td>
-                    </tr>
-                    <tr>
-                        <td>时间</td>
-                        <td>主题</td>
-                        <td>评论</td>
-                        <td>点赞</td>
-                    </tr>
-                    <tr>
-                        <td>时间</td>
-                        <td>主题</td>
-                        <td>评论</td>
-                        <td>点赞</td>
-                    </tr>
-                    <tr>
-                        <td>时间</td>
-                        <td>主题</td>
-                        <td>评论</td>
-                        <td>点赞</td>
-                    </tr>
-                    <tr>
-                        <td>时间</td>
-                        <td>主题</td>
-                        <td>评论</td>
-                        <td>点赞</td>
-                    </tr>
-                    <tr>
-                        <td>时间</td>
-                        <td>主题</td>
-                        <td>评论</td>
-                        <td>点赞</td>
-                    </tr>
-                    <tr>
-                        <td>时间</td>
-                        <td>主题</td>
-                        <td>评论</td>
-                        <td>点赞</td>
-                    </tr>
+                <tbody id="tbody">
+
                 </tbody>
             </table>
         </div>
@@ -178,6 +119,36 @@
 
 </body>
     <script>
-
+        console.log(22);
+        $(document).ready(function () {
+            console.log(111);
+            $.ajax({
+                type:"GET",
+                url:"/GetRecordServlet",
+                dataType:"json",
+                success:function (result) {
+                    $.each(result,function (index,item) {
+                        var liketag;
+                        if (item.likeornot == 1){
+                            liketag = "无行为";
+                        }else if (item.likeornot == 0){
+                            liketag = "踩";
+                        }else {
+                            liketag = "赞";
+                        }
+                        $('#tbody').append(
+                            '<tr>' +
+                            '   <td>'+ new Date(item.time).toLocaleString() +'</td>' +
+                            '   <td>'+ item.title +'</td>' +
+                            '   <td>'+ liketag +'</td>' +
+                            '   <td>'+ item.tag +'</td>' +
+                            '</tr>')
+                    })
+                },
+                error:function (error) {
+                    console.log("发生错误"+error);
+                }
+            })
+        })
     </script>
 </html>

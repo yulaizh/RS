@@ -49,7 +49,6 @@
         }
 
             .birth_input select{
-                background-color: #333333;
                 margin-left: 30px;
                 width: 90px;
                 height: 35px;
@@ -63,7 +62,6 @@
             height: 70px;
         }
             .area_input select{
-                background-color: #333333;
                 margin-left: 30px;
                 width: 90px;
                 height: 35px;
@@ -113,9 +111,9 @@
     <div class="main">
         <div class="sex_input">
             <span>性别:</span>
-            <a href="javascript:;" class="checked">男</a>
+            <a href="javascript:;">男</a>
             <a href="javascript:;">女</a>
-            <a href="javascript:;">保密</a>
+            <a href="javascript:;" class="checked">保密</a>
         </div>
         <div class="birth_input">
             <span>生日:</span>
@@ -144,39 +142,52 @@
 <script type="text/javascript" src="../js/pcs.js"></script>
 <script>
     var canRevise = false;
+    var sexIndex = 2;
 
-    $(document).ready(function () {
+$(document).ready(function () {
+
         for (var i=1990;i<=2018;i++) {
             $('#year').append("<option value="+i+">"+i+"</option>");
         }
         for (var i=1;i<=12;i++) {
-            $('#month').append("<option value="+i+">"+i+"</option>");
+            if (i == 1){
+                $('#month').append("<option selected value=\"" + 0+i + "\">"+ i +"</option>");
+            }else if ( i < 10) {
+                $('#month').append("<option value=\"" + 0+i + "\">" + i + "</option>");
+            }else {
+                $('#month').append("<option value=\"" + i + "\">" + i + "</option>");
+            }
         }
         for (var i=1;i<=31;i++) {
-            $('#day').append("<option value="+i+">"+i+"</option>");
+            if (i == 1) {
+                $('#day').append("<option selected value=\"" + 0+i + "\">" + i + "</option>");
+            }else if( i < 10 ){
+                $('#day').append("<option value=\"" +0+ i + "\">" + i + "</option>");
+            }else {
+                $('#day').append("<option value=\"" + i + "\">" + i + "</option>");
+            }
         }
-        // for (var i=0;i < provinceArray.length;i++) {
-        //     $('#province').append("<option value="+provinceArray[i]+">"+provinceArray[i]+"</option>");
-        // }
-        // for (var i=0;i < city.length;i++) {
-        //     $('#city').append("<option value="+city[i]+">"+city[i]+"</option>");
-        // }
-        // for (var i=0;i < sector.length;i++) {
-        //     $('#sector').append("<option value="+sector[i]+">"+sector[i]+"</option>");
-        // }
 
         $.ajax({
             type:"get",
-            url:"User_infoServlet",
+            url:"/User_infoServlet",
             dataType:"json",
-            success:function () {
-                
+            async:false,
+            success:function (data) {
+                sexIndex = data.sexIndex;
+                change(sexIndex);
+                $('#year').val(data.year);
+                $('#month').val(data.month);
+                $('#day').val(data.day);
+                // $('#province').val(data.province);
+                addressInit('province', 'city', 'sector',data.province,data.city,data.sector);
+                $('.text_input > input').val(data.area);
             },
             error:function (error) {
                 console.log("发生错误"+error.status)
             }
         })
-        
+
         $('#cancel').on('click',function () {
             if (canRevise){
                 canRevise = false;
@@ -195,14 +206,22 @@
         $('#confirm').on('click',function () {
             if (canRevise){
                 canRevise = false;
+
                 $.ajax({
                     type:"post",
-                    url:"User_infoServlet",
+                    url:"/User_infoServlet",
                     data:{
-
+                        sexIndex:sexIndex,
+                        year:$('#year').val(),
+                        month:$('#month').val(),
+                        day:$('#day').val(),
+                        province:$('#province').val(),
+                        city:$('#city').val(),
+                        sector:$('#sector').val(),
+                        area:$('.text_input > input').val()
                     },
                     success:function () {
-
+                        console.log("保存成功")
                     },
                     error:function (error) {
                         console.log("发生错误"+error.status)
@@ -216,15 +235,14 @@
             $(this).on('click',function () {
                 $('.sex_input > a').removeClass("checked");
                 $(this).addClass("checked");
+                sexIndex = index;
             })
-
         })
+    })
 
-
-    });
-
-
-
-
+    function change(sexIndex) {
+        $('.sex_input > a').removeClass("checked");
+        $('.sex_input > a').eq(sexIndex).addClass("checked");
+    }
 </script>
 </html>

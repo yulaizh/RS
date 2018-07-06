@@ -1,7 +1,8 @@
-package servlet;
+package servlet.loadServlet;
 
+import bean.ArticleListBean;
 import db.ConPools;
-import jsonPackage.PackagetoJson;
+import net.sf.json.JSONArray;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,10 +13,16 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @WebServlet(name = "IndexLoadingServlet",urlPatterns = "/IndexLoadingServlet")
 public class IndexLoadingServlet extends HttpServlet {
+
+    /**
+     *首页加载
+     * */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String param = request.getParameter("param");
         String sql = null;
@@ -45,9 +52,27 @@ public class IndexLoadingServlet extends HttpServlet {
             con = ConPools.getInstance().getConnection();
             pst = con.prepareStatement(sql);
             rs = pst.executeQuery();
-            result = PackagetoJson.indexPackage(rs);
+            List<ArticleListBean> list = new ArrayList<>();
+
+            while (rs.next()){
+                ArticleListBean articleBean = new ArticleListBean();
+                if(rs.getString("id").contains("\"")||rs.getString("title").contains("\"")||rs.getString("image_list").contains("\"")||rs.getString("image_list").equals("")){
+                    continue;
+                }
+                articleBean.setId(rs.getString("id"));
+                articleBean.setTitle(rs.getString("title"));
+                articleBean.setImage_list(rs.getString("image_list"));
+                articleBean.setCrawl_time(Long.parseLong(rs.getString("crawl_time")));
+                articleBean.setTag(rs.getString("tag"));
+                articleBean.setOrigin(rs.getString("origin"));
+                list.add(articleBean);
+            }
+
+            result = JSONArray.fromObject(list).toString();
             con.close();
-        }catch (Exception e) { System.out.println("IndexLoadingServlet"+e); }
+        }catch (Exception e) {
+            System.out.println("IndexLoadingServlet"+e);
+        }
 
         response.setContentType("application/json; charset=utf-8");
         response.setCharacterEncoding("UTF-8");
@@ -57,4 +82,5 @@ public class IndexLoadingServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request,response);
     }
+
 }

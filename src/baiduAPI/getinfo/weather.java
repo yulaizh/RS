@@ -1,4 +1,4 @@
-package otherAPI;
+package baiduAPI.getinfo;
 
 
 import java.io.InputStream;

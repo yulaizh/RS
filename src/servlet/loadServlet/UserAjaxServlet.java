@@ -1,4 +1,4 @@
-package servlet;
+package servlet.loadServlet;
 
 
 import db.ConPools;
@@ -16,6 +16,9 @@ import java.sql.ResultSet;
 
 @WebServlet(name = "UserAjaxServlet" , urlPatterns = "/UserAjaxServlet")
 public class UserAjaxServlet extends HttpServlet {
+    /**
+     * 加载头像，上传头像还没弄
+     * */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         String name = (String)session.getAttribute("account");
@@ -25,6 +28,7 @@ public class UserAjaxServlet extends HttpServlet {
         Connection con = null;
         PreparedStatement pst = null;
         ResultSet rs = null;
+
         try{
             con = ConPools.getInstance().getConnection();
             pst = con.prepareStatement(sql);
@@ -34,9 +38,7 @@ public class UserAjaxServlet extends HttpServlet {
             }else {
                 json = "{\"name\":\""+name +"\",\"url\":\""+ null +"\"}";
             }
-
             con.close();
-
         }catch (Exception e){
             e.printStackTrace();
         }

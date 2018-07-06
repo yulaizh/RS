@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script type="text/javascript" src="../js_lib/jquery-3.3.1.js"></script>
     <style>
         #canvas{
             margin-left: 20px;
@@ -16,12 +17,26 @@
 
 </body>
 <script type="text/javascript">
-    var chartData = [[50,"瓜子"], [100,"花生"], [200,"土豆"], [700,"南瓜四号"],[100,"花生"],[100,"花生"],[100,"花生"],[100,"花生"],[100,"花生"],[100,"花生"],[100,"花生"],[100,"花生"]];
-    var color = ["#2dc6c8","#b6a2dd","#5ab1ee","#d7797f","#2dc5c8","#e6a2dd","#5rb1ee","#d7597f","#2dc6b8","#b6a5dd","#5ab7ee","#d7727f"]
-    var num = color.length;
-    start(chartData);
+    // var chartData;
+    $(document).ready(function () {
+        $.ajax({
+            type:"post",
+            url:"/GetRecordServlet",
+            dataType:"json",
+            async:false,
+            success:function (result) {
+                var chartData = [[result.synthesize,"综合"], [result.society,"社会"], [result.entertainment,"娱乐"], [result.economics,"财经"],[result.technology,"科技"],[result.civilization,"文化"],[result.education,"教育"],[result.current_events,"时事"],[result.international,"国际"],[result.tourism,"旅游"],[result.physical,"体育"],[result.car,"汽车"],[result.fashion,"时尚"],[result.other,"其他"]]
+                start(chartData);
+            },
+            error:function (error) {
+                console.log("发生错误"+error.status)
+            }
+        })
+    })
 
     function start(data) {
+        var color = ["#2dc6c8","#b6a2dd","#5ab1ee","#d7797f","#2dc5c8","#e6a2dd","#5rb1ee","#d7597f","#2dc6b8","#b6a5dd","#5ab7ee","#d7727f","#d4727f","#d7787f"]
+        var num = color.length;
         var canvas = document.getElementById('canvas');
         var ctx;
         if(canvas && canvas.getContext){
@@ -84,6 +99,9 @@
             var textMoveDis = 200;
 
             for (var i = 0; i < num ; i++){
+                if (data[i][0] < 0){
+                    continue;
+                }
                 ctx.fillStyle = ctx.strokeStyle = color[i];
                 ctx.lineWidth = 1;
                 var step = ratioArr[i] * Math.PI * 2;      //旋转弧度
@@ -107,12 +125,12 @@
                     x2 -= line;
                     ctx.textAlign="right";
                     ctx.lineTo(x2 - linePadding,yMove);
-                    ctx.fillText(data[i][1],x2-textPadding-textMoveDis*(numctr-ctr)/numctr,y2-textPadding);
+                    ctx.fillText(data[i][1], x2 - textPadding - textMoveDis * (numctr - ctr) / numctr, y2 - textPadding);
                 }else{
                     x2 += line;
                     ctx.textAlign="left";
                     ctx.lineTo(x2 + linePadding,yMove);
-                    ctx.fillText(data[i][1],x2+textPadding+textMoveDis*(numctr-ctr)/numctr,y2-textPadding);
+                    ctx.fillText(data[i][1], x2 + textPadding + textMoveDis * (numctr - ctr) / numctr, y2 - textPadding);
                 }
                 ctx.stroke();
             }

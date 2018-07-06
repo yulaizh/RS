@@ -9,6 +9,10 @@ import java.io.IOException;
 
 @WebServlet(name = "ViewpagerServlet" ,urlPatterns ="/ViewpagerServlet")
 public class ViewpagerServlet extends HttpServlet {
+
+    /**
+     *轮播图加载
+     * */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String sql = "select id,image_list from article where tag exits in ('综合','社会','娱乐','财经','科技','文化')";
 

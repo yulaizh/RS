@@ -12,7 +12,6 @@ Vue.component('vue-li',{
             '</a>'+
         '</li><hr/>'
 })
-
 var con;
 $(document).ready(function () {
     $.ajax({
@@ -28,9 +27,7 @@ $(document).ready(function () {
             console.log("发生错误"+error.status)
         }
     })
-
     console.log(con);
-
     var example = new Vue({
         el:'#vue',
         data: {
